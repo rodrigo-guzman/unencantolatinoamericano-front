@@ -1,0 +1,55 @@
+/* Estilos para la grilla de tarjetas */
+.cardGrid {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    /* Tres columnas igualmente espaciadas */
+    gap: 30px;
+    /* Espacio entre las tarjetas */
+    justify-content: center;
+    align-items: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+/* Estilos para cada tarjeta individual */
+.card {
+    background: rgb(5, 5, 6);
+    background: linear-gradient(180deg, rgba(5, 5, 6, 1) 0%, rgba(121, 9, 15, 1) 52%, rgba(5, 5, 6, 1) 100%);
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    transition: transform 0.2s;
+    /* Efecto de escala en el hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px 10px 10px 10px;
+    /* Ajusta el valor para controlar la curvatura del borde */
+    color: white;
+    width: 20em;
+
+}
+
+.card:hover {
+    transform: scale(1.05);
+    /* Escalar la tarjeta en el hover */
+}
+
+.img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px 10px 10px 10px;
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+
+.a {
+    display: block;
+    text-decoration: none;
+    color: #007bff;
+    /* Color del enlace "Abrir" */
+    font-weight: bold;
+    margin-top: 10px;
+    /* Espacio entre el texto y el enlace */
+}
+
+.cardGrid p {
+    padding: 1em 0;
+}

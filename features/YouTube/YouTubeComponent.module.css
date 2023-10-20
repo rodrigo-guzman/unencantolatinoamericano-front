@@ -1,0 +1,41 @@
+/* styles.css */
+
+.containerYouTube {
+    display: flex;
+    padding: 20px 50px;
+    background: white
+}
+
+.column1 {
+    flex: 1.5;
+    padding: 7em;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.column2 {
+    flex: 2.5;
+    padding: 3em;
+    background-color: #ffffff;
+}
+
+
+.iframe {
+    width: 100%;
+    height: 315px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.containerYouTube h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.containerYouTube p {
+    font-size: 1rem;
+    padding-top: 1em;
+
+}
