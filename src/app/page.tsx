@@ -14,12 +14,13 @@ const Home: NextPage = () => {
         <title>Un Encanto LatinoAmericano</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <BrowserRouter>
+      <HomePage />
+      {/* <BrowserRouter>
         <HomePage />
         <Routes>
-          <Route path="/"></Route>
+          <Route path="/" element = {<HomePage/>}></Route>
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
       {/* </Provider> */}
     </>
   )

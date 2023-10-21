@@ -52,19 +52,19 @@ const Navbar: React.FC = () => {
               {
                 categories.length ?
                   categories.map((label: any) => (
-                    <Link
-                      to={`/`}
-                      key={label}
-                      className='nav-link'
-                      onClick={() => setIsDrawerOpen(false)}
-                      style={{ textDecoration: 'none' }}
-                    >
-                      <ListItem>
-                        <ListItemButton sx={{ paddingX: '50px' }}>
-                          <ListItemText sx={{ textAlign: 'center' }} primary={label} />
-                        </ListItemButton>
-                      </ListItem>
-                    </Link>
+                    // <Link
+                    //   to={`/`}
+                    //   key={label}
+                    //   className='nav-link'
+                    //   onClick={() => setIsDrawerOpen(false)}
+                    //   style={{ textDecoration: 'none' }}
+                    // >
+                    <ListItem key={label}>
+                      <ListItemButton sx={{ paddingX: '50px' }}>
+                        <ListItemText sx={{ textAlign: 'center' }} primary={label} />
+                      </ListItemButton>
+                    </ListItem>
+                    // </Link>
                   ))
                   :
                   <>
