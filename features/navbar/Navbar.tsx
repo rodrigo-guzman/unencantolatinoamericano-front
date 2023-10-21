@@ -56,7 +56,7 @@ const Navbar: React.FC = () => {
             <List>
               {
                 categories.length ?
-                  categories.map((label) => (
+                  categories.map((label: any) => (
                     <Link
                       to={`/`}
                       key={label}
