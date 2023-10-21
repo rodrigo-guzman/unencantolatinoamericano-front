@@ -8,7 +8,7 @@ var counter = 0
 export default function StandardImageList() {
     return (
         <div className={styles.ImageList}>
-            <ImageList sx={{ width: 1000, height: 450 }} cols={4} rowHeight={164}>
+            <ImageList cols={4} rowHeight={164}>
                 {itemData.map((item) => (
                     <ImageListItem key={counter = counter + 1}>
                         <Image
@@ -40,39 +40,7 @@ const itemData = [
         title: 'Camera',
     },
     {
-        img: '/oportunidades.jpeg',
+        img: '/vinos-y-alimentos.jpeg',
         title: 'Coffee',
-    },
-    {
-        img: '/turismo.jpg',
-        title: 'Hats',
-    },
-    {
-        img: '/vinos-y-alimentos.jpeg',
-        title: 'Honey',
-    },
-    {
-        img: '/turismo.jpg',
-        title: 'Basketball',
-    },
-    {
-        img: '/oportunidades.jpeg',
-        title: 'Fern',
-    },
-    {
-        img: '/vinos-y-alimentos.jpeg',
-        title: 'Mushrooms',
-    },
-    {
-        img: '/vinos-y-alimentos.jpeg',
-        title: 'Tomato basil',
-    },
-    {
-        img: '/turismo.jpg',
-        title: 'Sea star',
-    },
-    {
-        img: '/oportunidades.jpeg',
-        title: 'Bike',
     },
 ];

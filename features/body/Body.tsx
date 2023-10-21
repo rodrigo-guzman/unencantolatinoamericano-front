@@ -1,6 +1,6 @@
 import YourComponent from '../YouTube/YouTubeComponent';
 import CardGrid from '../card/Cardgrid';
-import ImageGallery from '../slider/ImageGallery';
+import ImageGallery from '../imageGallery/ImageGallery';
 import styles from './Body.module.css'
 
 const Body: React.FC = () => {

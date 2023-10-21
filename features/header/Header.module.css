@@ -1,15 +1,12 @@
 /* Media Query para pantallas pequeñas (menos de 600px de ancho) */
 @media screen and (max-width: 600px) {
     .header {
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: rgba(0, 0, 0, 0.9);
         height: 100vw;
-        background-image: url('../../assets/fondo.jpeg');
+        background: linear-gradient(rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%), url('../../assets/fondomobile.jpeg') no-repeat;
         background-size: cover;
-        background-position: center;
         text-align: center;
     }
-
-
 
     .header .content {
         display: flex;
@@ -17,7 +14,7 @@
         justify-content: center;
         align-items: center;
 
-        font-family: 'papyrus';
+        font-family: 'North Carossela';
         font-size: 20px;
         text-align: center;
         color: #fff;
@@ -57,7 +54,7 @@
     .header {
         background-color: rgba(0, 0, 0, 0.7);
         height: 50vw;
-        background-image: url('../../assets/fondo.jpeg');
+        background: linear-gradient(rgba(0, 0, 0, .90) 0%, rgba(0, 0, 0, .50) 100%), url('../../assets/fondo.jpeg') !important;
         background-size: cover;
         background-position: center;
         text-align: center;
@@ -73,7 +70,7 @@
         /* Ocupa todo el alto del header */
 
         position: relative;
-        font-family: 'papyrus';
+        font-family: 'North Carossela';
         font-size: 30px;
         text-align: center;
         color: #fff;
@@ -111,7 +108,7 @@
     .header {
         background-color: rgba(0, 0, 0, 0.7);
         height: 50vw;
-        background-image: url('../../assets/fondo.jpeg');
+        background: linear-gradient(rgba(0, 0, 0, .40) 0%, rgba(0, 0, 0, .10) 100%), url('../../assets/fondo.jpeg') no-repeat;
         background-size: cover;
         background-position: center;
         text-align: center;
@@ -128,7 +125,7 @@
         /* Ocupa todo el alto del header */
 
         position: relative;
-        font-family: 'papyrus';
+        font-family: 'North Carossela';
         font-size: 30px;
         text-align: center;
         color: #fff;
@@ -159,4 +156,8 @@
         font-size: 18px;
         font-family: 'Century Gothic';
     }
+}
+
+.p {
+    padding-top: 1em;
 }

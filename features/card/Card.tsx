@@ -15,7 +15,7 @@ const Card: React.FC<CardProps> = ({ image, text, link, description }) => {
             <Link href={link}>
                 <Image src={image} alt="Imagen" width={275} height={183} className={styles.img} />
                 <h3>{text}</h3>
-                <p>{description}</p>
+                <p className={styles.p}>{description}</p>
             </Link>
         </div>
     );

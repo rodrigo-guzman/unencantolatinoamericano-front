@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
 
   const subcategories: any = [
     'Vinos',
-    'Turismo'
+    'Una gira encantadora'
   ]
 
   return (
@@ -109,7 +109,7 @@ const Navbar: React.FC = () => {
             <li className={styles.li2}><a href="#">Alimenticios</a></li>
             <li className={styles.li2}><a href="#">Gastronomía</a></li>
             <li className={styles.li2}><a href="#">Derivados</a></li>
-            <li className={styles.li2}><a href="#">Turismo/ Enoturismo</a></li>
+            <li className={styles.li2}><a href="#">Una gira encantadora</a></li>
             <li className={styles.li2}><a href="#">Cultura</a></li>
             <li className={styles.li2}><a href="#">Novedades</a></li>
           </ul>

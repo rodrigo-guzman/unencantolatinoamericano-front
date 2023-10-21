@@ -1,21 +1,22 @@
 import styles from './Header.module.css'
 import Navbar from '../navbar/Navbar'
+import SocialMediaLinks from '../socialMediaLinks/SocialMediaLinks';
+import { Typography } from '@mui/material';
 
 const Header: React.FC = () => {
     return (
         <>
             <div className={styles.header}>
-
                 <div className={styles.navbar}>
-                    <div className={styles.logo}>
-
-                    </div>
+                    <div className={styles.logo}></div>
                     <Navbar />
                 </div>
                 <div className={styles.content}>
                     <h1>Un Encanto Latinoamericano</h1>
-                    <p>Descripción de la cabecera</p>
+                    <p className={styles.p}>Descripción de la cabecera</p>
+                    <SocialMediaLinks />
                 </div>
+
             </div>
         </>
     )
