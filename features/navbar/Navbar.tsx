@@ -8,13 +8,8 @@ import { Link, NavLink } from 'react-router-dom';
 
 
 const Navbar: React.FC = () => {
-  const [menuVisible, setMenuVisible] = useState(false);
   const [isDrawerOpen, setIsDrawerOpen] = useState(false)
 
-  const toggleMenu = () => {
-    console.log("entró")
-    setMenuVisible(!menuVisible);
-  };
 
   const categories: any = [
     'Conceptos',
@@ -97,11 +92,7 @@ const Navbar: React.FC = () => {
       </Container>
 
 
-
-      {/* <button className={styles.hamburgerButton} onClick={toggleMenu}>
-        ☰
-      </button> */}
-      <ul className={`${styles.ul} ${menuVisible ? styles.visibleMenu : ''}`}>
+      <ul className={styles.ul}>
         <li className={styles.li}>
           <a href="#">Concepto</a>
           <ul className={styles.ul}>

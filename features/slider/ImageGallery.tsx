@@ -4,12 +4,13 @@ import ImageListItem from '@mui/material/ImageListItem';
 import Image from 'next/image';
 import styles from './ImageGallery.module.css'
 
+var counter = 0
 export default function StandardImageList() {
     return (
         <div className={styles.ImageList}>
             <ImageList sx={{ width: 1000, height: 450 }} cols={4} rowHeight={164}>
                 {itemData.map((item) => (
-                    <ImageListItem key={item.img}>
+                    <ImageListItem key={counter = counter + 1}>
                         <Image
                             layout="responsive"
                             src={item.img}
@@ -18,6 +19,7 @@ export default function StandardImageList() {
                             height={183}
                             loading="lazy" />
                     </ImageListItem>
+
                 ))}
             </ImageList>
         </div>
