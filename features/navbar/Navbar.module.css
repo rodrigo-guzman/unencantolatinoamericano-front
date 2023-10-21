@@ -18,7 +18,6 @@
   padding-left: 0.3em;
   padding-right: 0.3em;
   position: absolute;
-  /* Cambia el posicionamiento a absoluto */
   top: 100%;
   left: 0;
 }
@@ -38,4 +37,24 @@
 
 .li2:hover {
   text-decoration: underline;
+}
+
+/* Mostrar el menú en pantallas pequeñas */
+.hamburgerButton {
+  display: none;
+}
+
+.visibleMenu {
+  display: block;
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 767px) {
+  .ul {
+    display: none;
+  }
+
+  .hamburgerButton {
+    display: block;
+  }
 }

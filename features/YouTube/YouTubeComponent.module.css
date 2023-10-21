@@ -1,25 +1,82 @@
 /* styles.css */
 
-.containerYouTube {
-    display: flex;
-    padding: 20px 50px;
-    background: white
+
+
+/* Media Query para pantallas pequeñas (menos de 600px de ancho) */
+@media screen and (max-width: 600px) {
+    .containerYouTube {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 50px;
+        background: white
+    }
+
+    .containerYouTube .column1 {
+        flex: 1.5;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 1em;
+    }
+
+    .containerYouTube .column2 {
+        flex: 2.5;
+        background-color: #ffffff;
+    }
 }
 
-.column1 {
-    flex: 1.5;
-    padding: 7em;
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Media Query para pantallas medianas (entre 601px y 900px de ancho) */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    .containerYouTube {
+        display: flex;
+        padding: 20px 50px;
+        background: white
+    }
+
+    .containerYouTube .column1 {
+        flex: 1.5;
+        padding: 7em;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .containerYouTube .column2 {
+        flex: 2.5;
+        padding: 3em;
+        background-color: #ffffff;
+    }
 }
 
-.column2 {
-    flex: 2.5;
-    padding: 3em;
-    background-color: #ffffff;
+/* Media Query para pantallas grandes (más de 900px de ancho) */
+@media screen and (min-width: 901px) {
+    .containerYouTube {
+        display: flex;
+        padding: 20px 50px;
+        background: white
+    }
+
+    .containerYouTube .column1 {
+        flex: 1.5;
+        padding: 7em;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .containerYouTube .column2 {
+        flex: 2.5;
+        padding: 3em;
+        background-color: #ffffff;
+    }
 }
+
+
+
+
 
 
 .iframe {
