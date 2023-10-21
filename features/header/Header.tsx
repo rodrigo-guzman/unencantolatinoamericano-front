@@ -1,7 +1,6 @@
 import styles from './Header.module.css'
 import Navbar from '../navbar/Navbar'
 import SocialMediaLinks from '../socialMediaLinks/SocialMediaLinks';
-import { Typography } from '@mui/material';
 
 const Header: React.FC = () => {
     return (

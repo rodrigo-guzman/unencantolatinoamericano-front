@@ -5,7 +5,7 @@ const YourComponent: React.FC = () => {
     return (
         <div className={styles.containerYouTube}>
             <div className={styles.column1}>
-                <h2>Presentación</h2>
+                <h2>CON  HONOR  LATINO</h2>
                 <p>Agregar video a su sitio web puede mejorar significativamente el compromiso, aumentar las conversiones y dejar una impresión duradera en su audiencia.</p>
             </div>
             <div className={styles.column2}>

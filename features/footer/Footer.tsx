@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Footer.module.css'
+import SocialMediaLinks from '../socialMediaLinks/SocialMediaLinks';
 
 const Footer: React.FC = () => {
     return (
@@ -11,6 +12,7 @@ const Footer: React.FC = () => {
             <div>
                 <p>Argentina | Teléfono: (351) 157123456 / (351) 158654987 | E-mail: nombre@unencantolatinoamericano.com</p>
             </div>
+            <SocialMediaLinks />
         </footer>
     );
 };

@@ -7,9 +7,9 @@ const Body: React.FC = () => {
     return (
         <>
             <div className={styles.body}>
-                <CardGrid />
+                <CardGrid indexs={[0, 1, 2]} />
                 <YourComponent />
-                <CardGrid />
+                <CardGrid indexs={[3, 4, 5]} />
                 <ImageGallery />
             </div>
         </>
