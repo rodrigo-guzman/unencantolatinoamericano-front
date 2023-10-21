@@ -1,19 +1,106 @@
+//@ts-check
 "use client";
 import React, { useState } from 'react';
 import styles from './Navbar.module.css';
+import { IconButton, Drawer, List, ListItem, ListItemButton, ListItemText, Skeleton, Divider, Toolbar, AppBar, Container, Typography, Button } from '@mui/material';
+import { DarkMode, LightMode, Menu } from '@mui/icons-material';
+import { Link, NavLink } from 'react-router-dom';
+
 
 const Navbar: React.FC = () => {
   const [menuVisible, setMenuVisible] = useState(false);
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false)
 
   const toggleMenu = () => {
+    console.log("entró")
     setMenuVisible(!menuVisible);
   };
 
+  const categories: any = [
+    'Conceptos',
+    'Rubros',
+    'Eventos',
+    'Imágenes y Videos',
+    'Los Hacedores',
+    'Comercial',
+    'Contacto'
+  ];
+
+  const subcategories: any = [
+    'Vinos',
+    'Turismo'
+  ]
+
   return (
     <div>
-      <button className={styles.hamburgerButton} onClick={toggleMenu}>
+
+      <Container>
+        <Toolbar>
+          <IconButton
+            size="large"
+            aria-label="account of current user"
+            aria-controls="menu-appbar"
+            aria-haspopup="true"
+            color="inherit"
+            sx={{ display: { xs: 'flex', md: 'none' } }}
+            title='icononono'
+            onClick={() => setIsDrawerOpen(!isDrawerOpen)}
+            style={{ backgroundColor: 'white' }}
+          >
+            <Menu />
+          </IconButton>
+          <Drawer
+            open={isDrawerOpen}
+            onClose={() => setIsDrawerOpen(false)}
+          >
+            <List>
+              {
+                categories.length ?
+                  categories.map((label) => (
+                    <Link
+                      to={`/`}
+                      key={label}
+                      className='nav-link'
+                      onClick={() => setIsDrawerOpen(false)}
+                      style={{ textDecoration: 'none' }}
+                    >
+                      <ListItem>
+                        <ListItemButton sx={{ paddingX: '50px' }}>
+                          <ListItemText sx={{ textAlign: 'center' }} primary={label} />
+                        </ListItemButton>
+                      </ListItem>
+                    </Link>
+                  ))
+                  :
+                  <>
+                    <ListItem>
+                      <ListItemButton sx={{ paddingX: '50px' }}>
+                        <Skeleton width='115px' height='40px' />
+                      </ListItemButton>
+                    </ListItem>
+                    <ListItem>
+                      <ListItemButton sx={{ paddingX: '50px' }}>
+                        <Skeleton width='115px' height='40px' />
+                      </ListItemButton>
+                    </ListItem>
+                    <ListItem>
+                      <ListItemButton sx={{ paddingX: '50px' }}>
+                        <Skeleton width='115px' height='40px' />
+                      </ListItemButton>
+                    </ListItem>
+                  </>
+              }
+            </List>
+            <Divider />
+          </Drawer>
+        </Toolbar>
+      </Container>
+
+
+
+      {/* <button className={styles.hamburgerButton} onClick={toggleMenu}>
         ☰
-      </button>
+      </button> */}
       <ul className={`${styles.ul} ${menuVisible ? styles.visibleMenu : ''}`}>
         <li className={styles.li}>
           <a href="#">Concepto</a>

@@ -9,9 +9,7 @@
         text-align: center;
     }
 
-    .header .navbar {
-        display: none;
-    }
+
 
     .header .content {
         display: flex;
@@ -25,12 +23,33 @@
         color: #fff;
         font-weight: normal;
 
-        height: 100%;
+        height: 50%;
         /* Establecer la altura al 100% del contenedor */
         max-width: 100%;
         /* Establecer el ancho al 100% del contenedor */
     }
 
+    .header .logo {
+        display: none;
+        /* background-color: rgba(0, 0, 0, 0.7);
+        height: 40px;
+        width: 80px;
+        background-image: url('../../assets/turismo.jpg');
+        background-size: cover;
+        background-position: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 10px; */
+    }
+
+    .header .navbar {
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        padding-top: 1em;
+        padding-right: 1em;
+        font-size: 18px;
+        font-family: 'Century Gothic';
+    }
 }
 
 /* Media Query para pantallas medianas (entre 601px y 900px de ancho) */
@@ -61,6 +80,29 @@
         width: 80%;
         margin: 10% auto 1%;
         font-weight: normal;
+    }
+
+    .header .logo {
+        background-color: rgba(0, 0, 0, 0.7);
+        height: 60px;
+        width: 100px;
+        background-image: url('../../assets/turismo.jpg');
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        margin-right: 7em;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+
+    .header .navbar {
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        padding-top: 3em;
+        padding-right: 3em;
+        font-size: 18px;
+        font-family: 'Century Gothic';
     }
 }
 
@@ -94,29 +136,27 @@
         margin: 10% auto 1%;
         font-weight: normal;
     }
-}
 
+    .header .logo {
+        background-color: rgba(0, 0, 0, 0.7);
+        height: 60px;
+        width: 100px;
+        background-image: url('../../assets/turismo.jpg');
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        margin-right: 7em;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
 
-
-.navbar {
-    display: flex;
-    justify-content: end;
-    align-items: end;
-    padding-top: 3em;
-    padding-right: 3em;
-    font-size: 18px;
-    font-family: 'Century Gothic';
-}
-
-.logo {
-    background-color: rgba(0, 0, 0, 0.7);
-    height: 60px;
-    width: 100px;
-    background-image: url('../../assets/turismo.jpg');
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    margin-right: 7em;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    .header .navbar {
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        padding-top: 1em;
+        padding-right: 3em;
+        font-size: 18px;
+        font-family: 'Century Gothic';
+    }
 }
