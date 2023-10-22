@@ -1,5 +1,5 @@
-import styles from './Header.module.css'
-import Navbar from '../navbar/Navbar'
+import styles from './Header.module.css';
+import Navbar from '../navbar/Navbar';
 import SocialMediaLinks from '../socialMediaLinks/SocialMediaLinks';
 
 const Header: React.FC = () => {
@@ -11,14 +11,13 @@ const Header: React.FC = () => {
                     <Navbar />
                 </div>
                 <div className={styles.content}>
-                    <h1 className={styles.h1}>Un Encanto LatinoAmericano</h1>
-                    <p className={styles.p}>Descripción de la cabecera</p>
+                    <h1 className={styles.h1}>Un Encanto Latinoamericano</h1>
+                    <p className={styles.p}>Un Encanto Latinoamericano</p>
                     <SocialMediaLinks />
                 </div>
-
             </div>
         </>
-    )
-}
+    );
+};
 
 export default Header;

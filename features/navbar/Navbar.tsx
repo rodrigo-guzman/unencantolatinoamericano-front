@@ -30,69 +30,69 @@ const Navbar: React.FC = () => {
 
   return (
     <div>
-
-      <Container>
-        <Toolbar>
-          <IconButton
-            size="large"
-            aria-label="account of current user"
-            aria-controls="menu-appbar"
-            aria-haspopup="true"
-            color="inherit"
-            sx={{ display: { xs: 'flex', md: 'none' } }}
-            title='icononono'
-            onClick={() => setIsDrawerOpen(!isDrawerOpen)}
-            style={{ backgroundColor: 'white' }}
-          >
-            <Menu />
-          </IconButton>
-          <Drawer
-            open={isDrawerOpen}
-            onClose={() => setIsDrawerOpen(false)}
-          >
-            <List>
-              {
-                categories.length ?
-                  categories.map((label: any) => (
-                    // <Link
-                    //   to={`/`}
-                    //   key={label}
-                    //   className='nav-link'
-                    //   onClick={() => setIsDrawerOpen(false)}
-                    //   style={{ textDecoration: 'none' }}
-                    // >
-                    <ListItem key={label}>
-                      <ListItemButton sx={{ paddingX: '50px' }}>
-                        <ListItemText sx={{ textAlign: 'center' }} primary={label} />
-                      </ListItemButton>
-                    </ListItem>
-                    // </Link>
-                  ))
-                  :
-                  <>
-                    <ListItem>
-                      <ListItemButton sx={{ paddingX: '50px' }}>
-                        <Skeleton width='115px' height='40px' />
-                      </ListItemButton>
-                    </ListItem>
-                    <ListItem>
-                      <ListItemButton sx={{ paddingX: '50px' }}>
-                        <Skeleton width='115px' height='40px' />
-                      </ListItemButton>
-                    </ListItem>
-                    <ListItem>
-                      <ListItemButton sx={{ paddingX: '50px' }}>
-                        <Skeleton width='115px' height='40px' />
-                      </ListItemButton>
-                    </ListItem>
-                  </>
-              }
-            </List>
-            <Divider />
-          </Drawer>
-        </Toolbar>
-      </Container>
-
+      <div className={styles.menuHamburguesa}>
+        <Container>
+          <Toolbar>
+            <IconButton
+              size="large"
+              aria-label="account of current user"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
+              color="inherit"
+              sx={{ display: { xs: 'flex', md: 'none' } }}
+              title='icononono'
+              onClick={() => setIsDrawerOpen(!isDrawerOpen)}
+              style={{ backgroundColor: 'white' }}
+            >
+              <Menu />
+            </IconButton>
+            <Drawer
+              open={isDrawerOpen}
+              onClose={() => setIsDrawerOpen(false)}
+            >
+              <List>
+                {
+                  categories.length ?
+                    categories.map((label: any) => (
+                      // <Link
+                      //   to={`/`}
+                      //   key={label}
+                      //   className='nav-link'
+                      //   onClick={() => setIsDrawerOpen(false)}
+                      //   style={{ textDecoration: 'none' }}
+                      // >
+                      <ListItem key={label}>
+                        <ListItemButton sx={{ paddingX: '50px' }}>
+                          <ListItemText sx={{ textAlign: 'center' }} primary={label} />
+                        </ListItemButton>
+                      </ListItem>
+                      // </Link>
+                    ))
+                    :
+                    <>
+                      <ListItem>
+                        <ListItemButton sx={{ paddingX: '50px' }}>
+                          <Skeleton width='115px' height='40px' />
+                        </ListItemButton>
+                      </ListItem>
+                      <ListItem>
+                        <ListItemButton sx={{ paddingX: '50px' }}>
+                          <Skeleton width='115px' height='40px' />
+                        </ListItemButton>
+                      </ListItem>
+                      <ListItem>
+                        <ListItemButton sx={{ paddingX: '50px' }}>
+                          <Skeleton width='115px' height='40px' />
+                        </ListItemButton>
+                      </ListItem>
+                    </>
+                }
+              </List>
+              <Divider />
+            </Drawer>
+          </Toolbar>
+        </Container>
+      </div>
 
       <ul className={styles.ul}>
         <li className={styles.li}>

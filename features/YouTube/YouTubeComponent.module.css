@@ -54,13 +54,14 @@
 @media screen and (min-width: 901px) {
     .containerYouTube {
         display: flex;
-        padding: 20px 50px;
+        padding: 5em 50px;
         background: white
     }
 
     .containerYouTube .column1 {
         flex: 1.5;
-        padding: 7em;
+        padding-left: 7em;
+        padding-top: 4em;
         background-color: #ffffff;
         display: flex;
         flex-direction: column;
@@ -69,7 +70,7 @@
 
     .containerYouTube .column2 {
         flex: 2.5;
-        padding: 3em;
+        padding-right: 7em;
         background-color: #ffffff;
     }
 }
@@ -85,6 +86,10 @@
     font-size: 2rem;
     font-family: Arial;
     margin-bottom: 10px;
+    padding-right: 1.5em;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 .containerYouTube p {
