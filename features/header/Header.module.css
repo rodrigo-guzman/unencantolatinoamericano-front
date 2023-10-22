@@ -19,11 +19,11 @@
         text-align: center;
         color: #fff;
         font-weight: normal;
-        padding-bottom: 11em;
+        padding-bottom: 15em;
     }
 
     .navbar {
-        padding-bottom: 10em;
+        padding-bottom: 13em;
         font-size: 14px;
         font-family: 'Arial';
         /* Usa posición relativa para que .navbar siga el flujo normal */
