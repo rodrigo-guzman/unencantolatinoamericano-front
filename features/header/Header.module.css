@@ -2,29 +2,33 @@
 @media screen and (max-width: 600px) {
     .header {
         background-color: rgba(0, 0, 0, 0.9);
-        height: 100vw;
-        background: linear-gradient(rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%), url('../../assets/fondomobile.jpeg') no-repeat;
+        height: 200vw !important;
+        background: linear-gradient(rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), url('../../assets/fondomobile.jpeg') no-repeat;
         background-size: cover;
         text-align: center;
-    }
-
-    .header .content {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        position: relative;
+    }
 
+    .content {
         font-family: 'North Carossela';
         font-size: 20px;
         text-align: center;
         color: #fff;
         font-weight: normal;
-
-        height: 50%;
-        /* Establecer la altura al 100% del contenedor */
-        max-width: 100%;
-        /* Establecer el ancho al 100% del contenedor */
+        padding-bottom: 11em;
     }
+
+    .navbar {
+        padding-bottom: 10em;
+        font-size: 14px;
+        font-family: 'Arial';
+        /* Usa posición relativa para que .navbar siga el flujo normal */
+    }
+
 
     .header .logo {
         display: none;
@@ -38,15 +42,6 @@
         border-radius: 10px; */
     }
 
-    .header .navbar {
-        display: flex;
-        justify-content: end;
-        align-items: end;
-        padding-top: 1em;
-        padding-right: 1em;
-        font-size: 18px;
-        font-family: 'Arial';
-    }
 }
 
 /* Media Query para pantallas medianas (entre 601px y 900px de ancho) */
@@ -94,8 +89,8 @@
 
     .header .navbar {
         display: flex;
-        justify-content: end;
-        align-items: end;
+        justify-content: flex-end;
+        align-items: flex-end;
         padding-top: 3em;
         padding-right: 3em;
         font-size: 18px;
@@ -149,8 +144,8 @@
 
     .header .navbar {
         display: flex;
-        justify-content: end;
-        align-items: end;
+        justify-content: flex-end;
+        align-items: flex-end;
         padding-top: 1em;
         padding-right: 2em;
         font-size: 18px;

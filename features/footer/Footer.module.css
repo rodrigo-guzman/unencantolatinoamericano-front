@@ -10,6 +10,12 @@
         font-size: 14px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
+
+    .socialMediaLinks {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 /* Media Query para pantallas medianas (entre 601px y 900px de ancho) */

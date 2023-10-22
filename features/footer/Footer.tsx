@@ -12,7 +12,9 @@ const Footer: React.FC = () => {
             <div>
                 <p>Argentina | Teléfono: (351) 157123456 / (351) 158654987 | E-mail: nombre@unencantolatinoamericano.com</p>
             </div>
-            <SocialMediaLinks />
+            <div className={styles.socialMediaLinks}>
+                <SocialMediaLinks />
+            </div>
         </footer>
     );
 };

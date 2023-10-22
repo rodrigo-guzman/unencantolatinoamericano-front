@@ -11,7 +11,7 @@ const Header: React.FC = () => {
                     <Navbar />
                 </div>
                 <div className={styles.content}>
-                    <h1>Un Encanto Latinoamericano</h1>
+                    <h1 className={styles.h1}>Un Encanto LatinoAmericano</h1>
                     <p className={styles.p}>Descripción de la cabecera</p>
                     <SocialMediaLinks />
                 </div>
