@@ -1,0 +1,158 @@
+/* Media Query para pantallas pequeñas (menos de 600px de ancho) */
+@media screen and (max-width: 600px) {
+    .header {
+        background-color: rgba(0, 0, 0, 0.9);
+        height: 200vw !important;
+        background: linear-gradient(rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), url('../../assets/fondomobile.jpeg') no-repeat;
+        background-size: cover;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .content {
+        font-family: 'North Carossela';
+        font-size: 20px;
+        text-align: center;
+        color: #fff;
+        font-weight: normal;
+        padding-bottom: 15em;
+    }
+
+    .navbar {
+        padding-bottom: 13em;
+        font-size: 14px;
+        font-family: 'Arial';
+        /* Usa posición relativa para que .navbar siga el flujo normal */
+    }
+
+
+    .header .logo {
+        display: none;
+        /* background-color: rgba(0, 0, 0, 0.7);
+        height: 40px;
+        width: 80px;
+        background-image: url('../../assets/turismo.jpg');
+        background-size: cover;
+        background-position: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 10px; */
+    }
+
+}
+
+/* Media Query para pantallas medianas (entre 601px y 900px de ancho) */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    .header {
+        background-color: rgba(0, 0, 0, 0.7);
+        height: 50vw;
+        background: linear-gradient(rgba(0, 0, 0, .90) 0%, rgba(0, 0, 0, .50) 100%), url('../../assets/fondo.jpeg') !important;
+        background-size: center;
+        background-position: center;
+        text-align: center;
+    }
+
+    .header .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding-bottom: 15em;
+        /* Ocupa todo el alto del header */
+
+        position: relative;
+        font-family: 'North Carossela';
+        font-size: 30px;
+        text-align: center;
+        color: #fff;
+        width: 80%;
+        margin: 10% auto 1%;
+        font-weight: normal;
+    }
+
+    .header .logo {
+        background-color: rgba(0, 0, 0, 0.7);
+        height: 60px;
+        width: 100px;
+        background-image: url('../../assets/turismo.jpg');
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        margin-right: 7em;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+
+    .header .navbar {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-top: 3em;
+        padding-right: 3em;
+        font-size: 18px;
+        font-family: 'Arial';
+    }
+}
+
+/* Media Query para pantallas grandes (más de 900px de ancho) */
+@media screen and (min-width: 901px) {
+    .header {
+        background-color: rgba(0, 0, 0, 0.7);
+        height: 30vw;
+        background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0, 0, 0, .50) 100%), url('../../assets/fondoSecundary.jpeg') no-repeat;
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+
+    }
+
+    .header .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 100%;
+        padding-bottom: 30em;
+        /* Ocupa todo el alto del header */
+
+        font-family: 'North Carossela';
+        font-size: 30px;
+        text-align: center;
+        color: #fff;
+        width: 80%;
+        margin: 10% auto 1%;
+        font-weight: normal;
+    }
+
+    .header .logo {
+        display: none;
+        /* background-color: rgba(0, 0, 0, 0.7);
+        height: 60px;
+        width: 100px;
+        background-image: url('../../assets/turismo.jpg');
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        margin-right: 7em;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 10px; */
+    }
+
+    .header .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        font-family: 'Arial';
+        padding-top: 2em;
+
+    }
+}
+
+.p {
+    padding-top: 1em;
+}

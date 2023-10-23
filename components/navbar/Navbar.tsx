@@ -1,15 +1,15 @@
-//@ts-check
 "use client";
 import React, { useState } from 'react';
 import styles from './Navbar.module.css';
 import { IconButton, Drawer, List, ListItem, ListItemButton, ListItemText, Skeleton, Divider, Toolbar, AppBar, Container, Typography, Button } from '@mui/material';
 import { DarkMode, LightMode, Menu } from '@mui/icons-material';
-import { Link, NavLink } from 'react-router-dom';
+import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 
 const Navbar: React.FC = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false)
-
+  const router = useRouter();
 
   const categories: any = [
     'Concepto',
@@ -63,7 +63,10 @@ const Navbar: React.FC = () => {
                       // >
                       <ListItem key={label}>
                         <ListItemButton sx={{ paddingX: '50px' }}>
-                          <ListItemText sx={{ textAlign: 'center' }} primary={label} />
+                          <ListItemText
+                            sx={{ textAlign: 'center' }}
+                            primary={label}
+                            onClick={() => router.push('/quienes-somos')} />
                         </ListItemButton>
                       </ListItem>
                       // </Link>
@@ -96,17 +99,20 @@ const Navbar: React.FC = () => {
 
       <ul className={styles.ul}>
         <li className={styles.li}>
-          <a href="#">Concepto</a>
+          <Link href='/'>Concepto</Link>
           <ul className={styles.ul}>
-            <li className={styles.li2}><a href="#">Proyecto</a></li>
+            <li className={styles.li2}><Link href='/ProyectoPage'>Proyecto</Link></li>
           </ul>
         </li>
         <li className={styles.li}>
-          <a href="#">Quienes Somos</a>
+          <Link href='/QuienesSomosPage'>Quienes Somos</Link>
         </li>
-        <li className={styles.li}>
-          <a href="#">Rubros</a>
+        <li className={styles.li}><a href="#">Rubros</a>
+
           <ul className={styles.ul}>
+            <li className={styles.li2}>
+              <Link href='/VinosYEspirituosasPage'>Vino y Espirituosas</Link>
+            </li>
             <li className={styles.li2}><a href="#">Turismo</a>
               <ul className={styles.ul}>
                 <li className={styles.li2}><a href="#">Enoturismo</a></li>
