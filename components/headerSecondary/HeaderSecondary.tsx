@@ -1,6 +1,5 @@
 import styles from './HeaderSecondary.module.css';
 import Navbar from '../navbar/Navbar';
-import SocialMediaLinks from '../socialMediaLinks/SocialMediaLinks';
 
 interface IHeaderSecondary {
     descriptionTitle: string

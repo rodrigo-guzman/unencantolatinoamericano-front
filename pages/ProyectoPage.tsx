@@ -1,4 +1,5 @@
 import SecondaryPages from '../components/secondaryPages/SecondaryPages';
+import './globalsSecundary.css'
 
 const ProyectoPage = () => {
     return (

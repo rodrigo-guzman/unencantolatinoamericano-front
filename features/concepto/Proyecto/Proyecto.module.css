@@ -1,0 +1,17 @@
+.h1 {
+    padding-bottom: 0.5em;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1em;
+}
+
+.imgage {
+    background-image: url('../../../public/Proyecto-un-encanto.jpeg');
+    background-position: center;
+    background-size: contain;
+    margin-top: 1em;
+
+}

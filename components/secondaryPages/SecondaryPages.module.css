@@ -1,0 +1,6 @@
+.component {
+    padding: 3em 6em;
+    font-family: Arial;
+    background: linear-gradient(180deg, rgba(5, 5, 6, 1) 0%, rgba(121, 9, 15, 1) 50%, rgba(5, 5, 6, 1) 100%);
+    color: rgb(206, 201, 201);
+}

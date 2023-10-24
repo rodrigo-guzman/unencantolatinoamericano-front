@@ -1,7 +1,7 @@
 import HeaderSecondary from '../headerSecondary/HeaderSecondary'
 import Footer from '../footer/Footer'
 import React from 'react';
-
+import styles from './SecondaryPages.module.css'
 import Proyecto from '../../features/concepto/Proyecto/Proyecto'
 import { COOKIE_NAME_PRERENDER_BYPASS } from 'next/dist/server/api-utils';
 
@@ -27,14 +27,13 @@ const SecondaryPages: React.FC<ISecondaryPages> = ({ componentName, descriptionT
         return <div>Componente no encontrado</div>;
     }
 
-    console.log('entró al SecondaryPAges')
-
     return (
         <>
             <HeaderSecondary descriptionTitle={descriptionTitle} />
-            <Component />
+            <div className={styles.component}>
+                <Component />
+            </div>
             <Footer />
-
         </>
     );
 };
