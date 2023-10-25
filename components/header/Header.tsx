@@ -12,7 +12,7 @@ const Header: React.FC = () => {
                 </div>
                 <div className={styles.content}>
                     <h1 className={styles.h1}>Un Encanto Latinoamericano</h1>
-                    <p className={styles.p}>Un Encanto Latinoamericano</p>
+                    <p className={styles.p}>Sinfonía de Placeres</p>
                     <SocialMediaLinks />
                 </div>
             </div>

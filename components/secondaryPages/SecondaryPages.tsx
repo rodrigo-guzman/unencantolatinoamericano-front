@@ -2,7 +2,7 @@ import HeaderSecondary from '../headerSecondary/HeaderSecondary'
 import Footer from '../footer/Footer'
 import React from 'react';
 import styles from './SecondaryPages.module.css'
-import Proyecto from '../../features/concepto/Proyecto/Proyecto'
+import Proyecto from '../../features/rubros/Gastronomia/Gastronomia'
 import { COOKIE_NAME_PRERENDER_BYPASS } from 'next/dist/server/api-utils';
 
 
@@ -15,8 +15,15 @@ const SecondaryPages: React.FC<ISecondaryPages> = ({ componentName, descriptionT
     // Mapea el nombre del componente a su importación real
     const componentMap: { [key: string]: React.ComponentType } = {
         Proyecto: require('../../features/concepto/Proyecto/Proyecto').default,
-        Body: require('../body/Body').default,
-        Footer: require('../footer/Footer').default,
+        QuienesSomos: require('../../features/quienesSomos/QuienesSomos').default,
+        VinosYEspirituosas: require('../../features/rubros/VinosYEspirituosas/VinosYEspirituosas').default,
+        Infusiones: require('../../features/rubros/Infusiones/Infusiones').default,
+        Alimentos: require('../../features/rubros/Alimentos/Alimentos').default,
+        Gastronomia: require('../../features/rubros/Gastronomia/Gastronomia').default,
+        Derivados: require('../../features/rubros/Derivados/Derivados').default,
+        Turismo: require('../../features/rubros/Turismo/Turismo').default,
+        NuevosEmprendimientos: require('../../features/rubros/NuevosEmprendimientos/NuevosEmprendimientos').default,
+        Arte: require('../../features/rubros/Arte/Arte').default,
         // Agrega aquí más componentes si es necesario
     };
 

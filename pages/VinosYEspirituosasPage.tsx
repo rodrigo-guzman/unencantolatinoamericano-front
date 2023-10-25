@@ -1,8 +1,9 @@
-import VinosYEspirituosas from '../features/rubros/VinosYEspirituosas/VinosYEspirituosas';
+import SecondaryPages from '../components/secondaryPages/SecondaryPages';
+import './globalsSecundary.css'
 
 const VinosYEspirituosasPage = () => {
     return (
-        <VinosYEspirituosas />
+        <SecondaryPages componentName={'VinosYEspirituosas'} descriptionTitle={'VINOS Y ESPIRITUOSAS'} />
     );
 }
 

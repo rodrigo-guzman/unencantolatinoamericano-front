@@ -22,7 +22,7 @@ const Proyecto: React.FC = () => {
                     auténtica y apasionada de conectarte con esta región rica en cultura y diversidad, has llegado al lugar
                     adecuado.
                 </p>
-                <Image src={'/Proyecto-un-encanto'} alt="Imagen" width={475} height={475} className={styles.imgage} />
+                <Image src={'/Proyecto-un-encanto'} alt="Imagen" width={475} height={475} className={styles.image} />
 
             </div>
         </div>

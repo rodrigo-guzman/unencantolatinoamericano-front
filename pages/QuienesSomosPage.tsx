@@ -1,10 +1,9 @@
-
-
-import QuienesSomos from '../features/quienesSomos/QuienesSomos';
+import SecondaryPages from '../components/secondaryPages/SecondaryPages';
+import './globalsSecundary.css'
 
 const QuienesSomosPage = () => {
     return (
-        <QuienesSomos />
+        <SecondaryPages componentName={'QuienesSomos'} descriptionTitle={'QUIENES SOMOS'} />
     );
 }
 

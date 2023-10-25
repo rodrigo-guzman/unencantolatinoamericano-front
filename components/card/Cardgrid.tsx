@@ -20,14 +20,14 @@ const CardGrid: React.FC<CardGridProps> = ({ indexs }) => {
             image: '/vinos-y-alimentos.jpeg',
             text: 'Sabores encantadores',
             description: 'Explora el mundo con nosotros: Turismo de élite a tu alcance en esta exclusiva sección',
-            link: '/ruta-de-enlace-1',
+            link: '/GastronomiaPage',
         },
         {
             id: 2,
             image: '/turismo.jpg',
             text: 'Una gira encantadora',
             description: 'Sabores que conquistan: Explora nuestra selección de bebidas y alimentos irresistibles',
-            link: '/ruta-de-enlace-2',
+            link: '/TurismoPage',
         },
         {
             id: 3,
@@ -41,14 +41,14 @@ const CardGrid: React.FC<CardGridProps> = ({ indexs }) => {
             image: '/vinos-y-alimentos.jpeg',
             text: 'El encanto de los pueblos',
             description: 'Explora el mundo con nosotros: Turismo de élite a tu alcance en esta exclusiva sección',
-            link: '/ruta-de-enlace-1',
+            link: '/ArtePage',
         },
         {
             id: 5,
             image: '/turismo.jpg',
             text: 'Derivados encantos',
             description: 'Sabores que conquistan: Explora nuestra selección de bebidas y alimentos irresistibles',
-            link: '/ruta-de-enlace-2',
+            link: '/DerivadosPage',
         },
         {
             id: 6,

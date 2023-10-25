@@ -1,0 +1,13 @@
+.h1 {
+    padding-bottom: 0.5em;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1em;
+}
+
+.image {
+    margin-top: 2em;
+}

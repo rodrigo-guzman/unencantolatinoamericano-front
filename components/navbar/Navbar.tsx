@@ -108,16 +108,30 @@ const Navbar: React.FC = () => {
           <Link href='/QuienesSomosPage'>Quienes Somos</Link>
         </li>
         <li className={styles.li}><a href="#">Rubros</a>
-
           <ul className={styles.ul}>
             <li className={styles.li2}>
               <Link href='/VinosYEspirituosasPage'>Vino y Espirituosas</Link>
             </li>
-            <li className={styles.li2}><a href="#">Turismo</a>
-              <ul className={styles.ul}>
-                <li className={styles.li2}><a href="#">Enoturismo</a></li>
-                <li className={styles.li2}><a href="#">Turismo Temático</a></li>
-              </ul>
+            <li className={styles.li2}>
+              <Link href='/InfusionesPage'>Infusiones</Link>
+            </li>
+            <li className={styles.li2}>
+              <Link href='/AlimentosPage'>Alimentos</Link>
+            </li>
+            <li className={styles.li2}>
+              <Link href='/GastronomiaPage'>Gastronomía</Link>
+            </li>
+            <li className={styles.li2}>
+              <Link href='/DerivadosPage'>Derivados</Link>
+            </li>
+            <li className={styles.li2}>
+              <Link href='/TurismoPage'>Turismo/Enoturismo y Turismo Temático</Link>
+            </li>
+            <li className={styles.li2}>
+              <Link href='/NuevosEmprendimientosPage'>Nuevos Emprendimientos</Link>
+            </li>
+            <li className={styles.li2}>
+              <Link href='/ArtePage'>Arte</Link>
             </li>
           </ul>
         </li>
