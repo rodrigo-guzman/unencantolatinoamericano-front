@@ -99,7 +99,7 @@ const Navbar: React.FC = () => {
 
       <ul className={styles.ul}>
         <li className={styles.li}>
-          <Link href='/'>Concepto</Link>
+          <Link href='/ProyectoPage'>Concepto</Link>
           <ul className={styles.ul}>
             <li className={styles.li2}><Link href='/ProyectoPage'>Proyecto</Link></li>
           </ul>
@@ -140,13 +140,13 @@ const Navbar: React.FC = () => {
             <li className={styles.li2}><a href="#">LatinoAmérica</a></li>
           </ul>
         </li>
-        <li className={styles.li}><a href="#">Eventos</a>
+        <li className={styles.li}><Link href='/EventosPage'>Eventos</Link>
           <ul className={styles.ul}>
-            <li className={styles.li2}><a href="#">Eventos</a></li>
-            <li className={styles.li2}><a href="#">Agenda</a></li>
+            <li className={styles.li2}><Link href='/EventosPage'>Eventos</Link></li>
+            <li className={styles.li2}><Link href='/AgendaPage'>Agenda</Link></li>
           </ul>
         </li>
-        <li className={styles.li}><a href="#">Imágenes y Videos</a>
+        <li className={styles.li}><Link href='/ImagenesPage'>Imágenes y Videos</Link>
         </li>
         <li className={styles.li}><a href="#">Los Hacedores</a>
         </li>

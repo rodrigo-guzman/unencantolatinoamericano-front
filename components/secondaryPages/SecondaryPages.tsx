@@ -2,7 +2,7 @@ import HeaderSecondary from '../headerSecondary/HeaderSecondary'
 import Footer from '../footer/Footer'
 import React from 'react';
 import styles from './SecondaryPages.module.css'
-import Proyecto from '../../features/rubros/Gastronomia/Gastronomia'
+import Proyecto from '../../features/eventos/Eventos/Eventos'
 import { COOKIE_NAME_PRERENDER_BYPASS } from 'next/dist/server/api-utils';
 
 
@@ -24,6 +24,9 @@ const SecondaryPages: React.FC<ISecondaryPages> = ({ componentName, descriptionT
         Turismo: require('../../features/rubros/Turismo/Turismo').default,
         NuevosEmprendimientos: require('../../features/rubros/NuevosEmprendimientos/NuevosEmprendimientos').default,
         Arte: require('../../features/rubros/Arte/Arte').default,
+        Eventos: require('../../features/eventos/Eventos/Eventos').default,
+        Agenda: require('../../features/eventos/Agenda/Agenda').default,
+        Imagenes: require('../../features/imagenes/Imagenes/Imagenes').default,
         // Agrega aquí más componentes si es necesario
     };
 
