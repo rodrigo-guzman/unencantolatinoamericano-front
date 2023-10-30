@@ -1,3 +1,4 @@
+/* Estilos base */
 .divForm {
     display: flex;
     justify-content: center;
@@ -47,4 +48,34 @@
 
 .formMail button:hover {
     background-color: #0056b3;
+}
+
+/* Media Query para pantallas pequeñas */
+@media screen and (max-width: 600px) {
+    .divForm {
+        display: block; /* Cambia a diseño de bloque para centrar en pantallas pequeñas */
+    }
+
+    .titleForm {
+        font-size: 20px; /* Reduzca el tamaño del título */
+    }
+
+    .formMail {
+        max-width: 100%; /* Ajusta el ancho máximo al 100% */
+    }
+
+    .formMail label {
+        margin-bottom: 10px; /* Espaciado ligeramente mayor entre etiquetas */
+    }
+
+    .formMail input,
+    .formMail textarea {
+        font-size: 14px; /* Reduzca el tamaño de fuente para elementos de entrada */
+        margin-bottom: 12px; /* Espaciado ligeramente mayor entre campos de entrada */
+    }
+
+    .formMail button {
+        font-size: 16px; /* Reduzca el tamaño de fuente del botón */
+        margin-top: 16px; /* Espaciado ligeramente mayor antes del botón */
+    }
 }
