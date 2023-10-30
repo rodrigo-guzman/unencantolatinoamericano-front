@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 import emailjs from '@emailjs/browser';
 import styles from './Contacto.module.css';
 
@@ -12,11 +11,12 @@ const Contacto = () => {
     });
     const [submitted, setSubmitted] = useState(false);
 
-    const contacto = (e) => {
+    const contacto = (e: React.FormEvent) => {
         e.preventDefault();
+        const formElement = e.target as HTMLFormElement;
 
         emailjs
-            .sendForm('service_v87e4gd', 'template_oeyei6v', e.target, '7gvuxjIozpnx56V-U')
+            .sendForm('service_v87e4gd', 'template_oeyei6v', formElement, '7gvuxjIozpnx56V-U')
             .then((response) => {
                 console.log('Correo enviado con éxito:', response);
                 setSubmitted(true);
