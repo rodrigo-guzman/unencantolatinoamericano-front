@@ -1,0 +1,44 @@
+.contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.columnaImagen {
+    flex: 1;
+    padding: 20px;
+    max-width: 100%;
+    /* Ajusta el tamaño de la imagen a tu preferencia */
+}
+
+.columnaImagen img {
+    width: 100%;
+    height: auto;
+}
+
+.columnaTexto {
+    flex: 1;
+    padding: 20px;
+}
+
+.h1Titulo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.pParrafo {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Puedes agregar estilos adicionales aquí para resaltar el diseño minimalista */
+
+.pParrafo {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Estilos adicionales de tu elección para resaltar el diseño minimalista */

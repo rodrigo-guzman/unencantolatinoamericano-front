@@ -1,0 +1,50 @@
+.divForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.titleForm {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.formMail {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.formMail label {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.formMail input,
+.formMail textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 16px;
+    outline: none;
+}
+
+.formMail button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.formMail button:hover {
+    background-color: #0056b3;
+}
