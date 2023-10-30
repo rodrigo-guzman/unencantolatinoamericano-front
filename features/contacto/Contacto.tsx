@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 import emailjs from '@emailjs/browser';
 import styles from './Contacto.module.css';
 
@@ -11,7 +12,7 @@ const Contacto = () => {
     });
     const [submitted, setSubmitted] = useState(false);
 
-    const sendEmail = (e) => {
+    const contacto = (e) => {
         e.preventDefault();
 
         emailjs
@@ -29,7 +30,7 @@ const Contacto = () => {
         <div className={styles.divForm}>
             
             {!submitted ? (
-                <form className={styles.formMail} onSubmit={sendEmail}>
+                <form className={styles.formMail} onSubmit={contacto}>
                     <label>Nombre</label>
                     <input type="text" name="user_name" />
                     <label>Apellido</label>

@@ -27,6 +27,9 @@ const SecondaryPages: React.FC<ISecondaryPages> = ({ componentName, descriptionT
         Eventos: require('../../features/eventos/Eventos/Eventos').default,
         Agenda: require('../../features/eventos/Agenda/Agenda').default,
         Imagenes: require('../../features/imagenes/Imagenes/Imagenes').default,
+        Regiones: require('../../features/regiones/latinoAmerica/RegionesLatinoAm').default,
+        Contacto: require('../../features/contacto/Contacto').default,
+        Comercial: require('../../features/comercial/Comercial').default,
         // Agrega aquí más componentes si es necesario
     };
 

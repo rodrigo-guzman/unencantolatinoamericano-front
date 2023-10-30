@@ -137,7 +137,7 @@ const Navbar: React.FC = () => {
         </li>
         <li className={styles.li}><a href="#">Regiones</a>
           <ul className={styles.ul}>
-            <li className={styles.li2}><a href="#">LatinoAmérica</a></li>
+            <li className={styles.li2}><a href="/RegionesLatAmPage">LatinoAmérica</a></li>
           </ul>
         </li>
         <li className={styles.li}><Link href='/EventosPage'>Eventos</Link>
@@ -150,9 +150,9 @@ const Navbar: React.FC = () => {
         </li>
         <li className={styles.li}><a href="#">Los Hacedores</a>
         </li>
-        <li className={styles.li}><a href="#">Comercial</a>
+        <li className={styles.li}><a href='/ComercialPage'>Comercial</a>
         </li>
-        <li className={styles.li}><a href="#">Contacto</a>
+        <li className={styles.li}><a href='/ContactoPage'>Contacto</a>
         </li>
       </ul>
     </div>

@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@mui/icons-material": "^5.14.13",
     "@mui/material": "^5.14.13",
     "next": "13.5.4",
