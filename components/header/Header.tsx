@@ -13,7 +13,7 @@ const Header: React.FC = () => {
                     <Navbar />
                 </div>
                 <div className={styles.content}>
-                <h1 className={styles.h1}>Un Encanto Latinoamericano</h1>
+                    <h1 className={styles.h1}>Un Encanto Latinoamericano</h1>
                     <p className={styles.p}>Sinfonía de placeres</p>
                     <SocialMediaLinks />
                 </div>
