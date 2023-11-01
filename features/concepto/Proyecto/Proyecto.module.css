@@ -1,10 +1,6 @@
-.h1 {
-    padding-bottom: 0.5em;
-}
-
 .contenido {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding-bottom: 1em;
 }
 
@@ -12,6 +8,13 @@
     background-image: url('../../../public/Proyecto-un-encanto.jpeg');
     background-position: center;
     background-size: contain;
-    margin-top: 1em;
+    margin-left: auto; /* Mover la imagen hacia la derecha */
+}
 
+.p {
+    flex: 1;
+}
+
+.p {
+    margin-bottom: 1em; /* Agregar margen inferior para separar los párrafos */
 }

@@ -1,5 +1,6 @@
 import styles from './Turismo.module.css'
 import Image from 'next/image';
+import turismo from '../../../assets/turismoTematico.png'
 
 const Turismo: React.FC = () => {
     return (
@@ -11,7 +12,7 @@ const Turismo: React.FC = () => {
                     magia de los viñedos, las tradiciones y la cultura. En esta sección, te invitamos a explorar el
                     fascinante mundo del enoturismo y el turismo temático, donde los sentidos se despiertan y los
                     viajes se convierten en experiencias inolvidables.</p>
-                <Image src={'/GiraEncantadora.jpeg'} alt="Imagen" width={649} height={800} className={styles.image} />
+                <Image src={turismo} alt="Imagen" className={styles.image} />
             </div>
         </div>
     );

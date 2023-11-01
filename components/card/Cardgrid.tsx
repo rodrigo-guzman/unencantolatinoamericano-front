@@ -34,7 +34,7 @@ const CardGrid: React.FC<CardGridProps> = ({ indexs }) => {
             image: '/oportunidades.jpeg',
             text: 'Packs especiales',
             description: 'Explora el sendero de las posibilidades: Donde los sueños encuentran su camino en nuestra sección de Oportunidades',
-            link: '/ruta-de-enlace-3',
+            link: '/ComercialPage',
         },
         {
             id: 4,

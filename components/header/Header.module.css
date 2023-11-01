@@ -1,3 +1,24 @@
+@font-face {
+    font-family: 'OpalineUEL';
+    
+    src: url('../../public/fuentes/Opaline.woff') format('woff'),
+        url('../../public/fuentes/Sandrina.ttf') format('ttf');
+    /* Agrega otros formatos de fuente si es necesario */
+}
+
+.h1{
+    font-family: 'OpalineUEL', sans-serif;
+    font-size: 70px;
+    
+}
+
+.p {
+    font-family: 'Sandrina', SANS-SERIF;
+    font-size: 90px;
+    margin-bottom: 5px; 
+}
+
+
 /* Media Query para pantallas pequeñas (menos de 600px de ancho) */
 @media screen and (max-width: 600px) {
     .header {

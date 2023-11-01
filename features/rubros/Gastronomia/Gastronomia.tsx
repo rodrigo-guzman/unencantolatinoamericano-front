@@ -1,6 +1,6 @@
 import styles from './Gastronomia.module.css'
 import Image from 'next/image';
-
+import gastronomia from '../../../assets/Gastronomia .png'
 const Gastronomia: React.FC = () => {
     return (
         <div className={styles.contenedor}>
@@ -14,7 +14,7 @@ const Gastronomia: React.FC = () => {
                     cada experiencia es un viaje. Acompáñanos en esta travesía de deleite para tus sentidos y
                     descubre cómo la comida puede ser mucho más que una necesidad, es una forma de arte y
                     expresión. ¡Que cada bocado sea una celebración!</p>
-                <Image src={'/Gastronomia.jpeg'} alt="Imagen" width={800} height={763} className={styles.image} />
+                <Image src={gastronomia} alt="Imagen" className={styles.image} />
             </div>
         </div>
     );

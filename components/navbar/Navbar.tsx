@@ -148,7 +148,7 @@ const Navbar: React.FC = () => {
         </li>
         <li className={styles.li}><Link href='/ImagenesPage'>Imágenes y Videos</Link>
         </li>
-        <li className={styles.li}><a href="#">Los Hacedores</a>
+        <li className={styles.li}><Link href="/LosHacedoresPage">Los Hacedores</Link>
         </li>
         <li className={styles.li}><Link href='/ComercialPage'>Comercial</Link>
         </li>

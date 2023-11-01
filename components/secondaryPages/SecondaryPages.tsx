@@ -30,6 +30,7 @@ const SecondaryPages: React.FC<ISecondaryPages> = ({ componentName, descriptionT
         Regiones: require('../../features/regiones/latinoAmerica/RegionesLatinoAm').default,
         Contacto: require('../../features/contacto/Contacto').default,
         Comercial: require('../../features/comercial/Comercial').default,
+        LosHacedores: require('../../features/losHacedores/LosHacedores').default,
         // Agrega aquí más componentes si es necesario
     };
 

@@ -79,3 +79,10 @@
         margin-top: 16px; /* Espaciado ligeramente mayor antes del botón */
     }
 }
+/* Contacto.module.css */
+.recaptcha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}

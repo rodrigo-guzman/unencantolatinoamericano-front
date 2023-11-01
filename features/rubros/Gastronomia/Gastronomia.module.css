@@ -1,13 +1,16 @@
-.h1 {
-    padding-bottom: 0.5em;
-}
-
 .contenido {
     display: flex;
     flex-direction: column;
+    align-items: center; /* Centrar horizontalmente el contenido */
+    text-align: center; /* Centrar el texto horizontalmente */
     padding-bottom: 1em;
 }
 
 .image {
-    margin-top: 2em;
+    background-image: url('../../../public/Proyecto-un-encanto.jpeg');
+    background-position: center;
+    background-size: contain;
+    width: 400px; /* Ajusta el ancho de la imagen según tu preferencia */
+    height: 400px; /* Ajusta el alto de la imagen según tu preferencia */
+    margin-top: 1em; /* Espacio entre el texto y la imagen */
 }
