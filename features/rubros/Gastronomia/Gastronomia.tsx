@@ -14,7 +14,9 @@ const Gastronomia: React.FC = () => {
                     cada experiencia es un viaje. Acompáñanos en esta travesía de deleite para tus sentidos y
                     descubre cómo la comida puede ser mucho más que una necesidad, es una forma de arte y
                     expresión. ¡Que cada bocado sea una celebración!</p>
-                <Image src={gastronomia} alt="Imagen" className={styles.image} />
+                {/* <Image src={'https://firebasestorage.googleapis.com/v0/b/un-encanto-latinoamericano.appspot.com/o/Gastronomia.jpeg?alt=media&token=b5d37a05-2ce9-4787-a2e0-256e469ec355&_gl=1*17z1ohe*_ga*MTQ4ODY2MzM3NS4xNjk0Mjk3MzIx*_ga_CW55HF8NVT*MTY5ODg5MDM0NS40LjEuMTY5ODg5MDY4OS42MC4wLjA.'} alt="Imagen" className={styles.image} /> */}
+                <Image src={''} alt="Imagen" className={styles.image} />
+
             </div>
         </div>
     );

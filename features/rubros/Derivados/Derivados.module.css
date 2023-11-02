@@ -1,21 +1,26 @@
 .contenido {
     display: flex;
-    flex-direction: column; /* Alinear elementos verticalmente uno debajo del otro */
-    align-items: center; /* Centrar horizontalmente el contenido */
+    flex-direction: column;
+    /* Alinear elementos verticalmente uno debajo del otro */
+    align-items: center;
+    /* Centrar horizontalmente el contenido */
     padding-bottom: 1em;
 }
 
 .texto {
-    margin-bottom: 1em; /* Agregar margen inferior para separar el texto de la imagen */
-    text-align: center; /* Centrar el texto horizontalmente */
+    margin-bottom: 1em;
+    /* Agregar margen inferior para separar el texto de la imagen */
+    text-align: center;
+    /* Centrar el texto horizontalmente */
 }
 
 .image {
-    background-image: url('../../../public/Proyecto-un-encanto.jpeg');
+    background-image: url('../../../public/derivados.jpeg');
     background-position: center;
     background-size: contain;
-    width: 300px; /* Ajusta el ancho de la imagen según tu preferencia */
-    height: 300px; /* Ajusta el alto de la imagen según tu preferencia */
-    margin-top: 1em; /* Agregar margen superior para separar la imagen del texto */
-    align-self: flex-end; /* Coloca la imagen en la parte inferior del contenedor */
+    background-repeat: no-repeat;
+
+    margin-top: 1em;
+    /* Agregar margen superior para separar la imagen del texto */
+
 }

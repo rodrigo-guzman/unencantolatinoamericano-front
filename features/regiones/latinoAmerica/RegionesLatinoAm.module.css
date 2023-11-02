@@ -42,3 +42,7 @@
 }
 
 /* Estilos adicionales de tu elección para resaltar el diseño minimalista */
+
+.image {
+    background-image: url('../../../public/Regiones.jpeg');
+}

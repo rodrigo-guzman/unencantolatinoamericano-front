@@ -8,6 +8,10 @@
     padding: 20px;
 }
 
+.image {
+    background-image: url('../../public/QuienesSomos.jpeg');
+}
+
 .columnaImagen {
     flex: 1;
     padding: 20px;

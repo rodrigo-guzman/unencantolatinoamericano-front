@@ -1,5 +1,4 @@
-import SecondaryPages from '../components/secondaryPages/SecondaryPages';
-import './globalsSecundary.css'
+import SecondaryPages from '../../../../components/secondaryPages/SecondaryPages';
 
 const TurismoPage = () => {
     return (

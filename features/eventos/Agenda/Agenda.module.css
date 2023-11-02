@@ -9,5 +9,6 @@
 }
 
 .image {
+    background-image: url('../../../public/EventosAgenda.jpeg');
     margin-top: 2em;
 }

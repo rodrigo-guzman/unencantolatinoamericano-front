@@ -6,7 +6,9 @@ const YourComponent: React.FC = () => {
         <div className={styles.containerYouTube}>
             <div className={styles.column1}>
                 <h2>CON  HONOR  LATINO</h2>
-                <p>Agregar video a su sitio web puede mejorar significativamente el compromiso, aumentar las conversiones y dejar una impresión duradera en su audiencia.</p>
+                <p>En el corazón vibrante de América Latina, donde la cultura, el sabor y la pasión convergen,
+                    nace Un Encanto Latinoamericano un emprendimiento apasionado dedicado a la comunicación, la difusión y la
+                    comercialización de todo lo que hace que esta región sea única en el mundo</p>
             </div>
             <div className={styles.column2}>
                 <iframe

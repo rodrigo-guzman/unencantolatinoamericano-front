@@ -5,7 +5,7 @@
 .card {
     background: rgb(5, 5, 6);
     background: linear-gradient(180deg, rgba(5, 5, 6, 1) 0%, rgba(121, 9, 15, 1) 52%, rgba(5, 5, 6, 1) 100%);
-    border: 1px solid #e0e0e0;
+    /* border: 1px solid #e0e0e0; */
     text-align: center;
     transition: transform 0.2s;
     /* Efecto de escala en el hover */

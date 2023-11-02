@@ -8,7 +8,8 @@
     background-image: url('../../../public/Proyecto-un-encanto.jpeg');
     background-position: center;
     background-size: contain;
-    margin-left: auto; /* Mover la imagen hacia la derecha */
+    margin-left: auto;
+    /* Mover la imagen hacia la derecha */
 }
 
 .p {
@@ -16,5 +17,6 @@
 }
 
 .p {
-    margin-bottom: 1em; /* Agregar margen inferior para separar los párrafos */
+    margin-bottom: 1em;
+    /* Agregar margen inferior para separar los párrafos */
 }

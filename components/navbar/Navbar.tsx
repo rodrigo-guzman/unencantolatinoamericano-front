@@ -99,60 +99,63 @@ const Navbar: React.FC = () => {
 
       <ul className={styles.ul}>
         <li className={styles.li}>
-          <Link href='/ProyectoPage'>Concepto</Link>
+          <Link href='/'>Home</Link>
+        </li>
+        <li className={styles.li}>
+          <Link href='/Concepto/Proyecto'>Concepto</Link>
           <ul className={styles.ul}>
-            <li className={styles.li2}><Link href='/ProyectoPage'>Proyecto</Link></li>
+            <li className={styles.li2}><Link href='/Concepto/Proyecto'>Proyecto</Link></li>
           </ul>
         </li>
         <li className={styles.li}>
-          <Link href='/QuienesSomosPage'>Quienes Somos</Link>
+          <Link href='/QuienesSomos'>Quienes Somos</Link>
         </li>
-        <li className={styles.li}><a href="#">Rubros</a>
+        <li className={styles.li}>Rubros
           <ul className={styles.ul}>
             <li className={styles.li2}>
-              <Link href='/VinosYEspirituosasPage'>Vino y Espirituosas</Link>
+              <Link href='/Rubros/VinosYEspirituosas'>Vino y Espirituosas</Link>
             </li>
             <li className={styles.li2}>
-              <Link href='/InfusionesPage'>Infusiones</Link>
+              <Link href='/Rubros/Infusiones'>Infusiones</Link>
             </li>
             <li className={styles.li2}>
-              <Link href='/AlimentosPage'>Alimentos</Link>
+              <Link href='/Rubros/Alimentos'>Alimentos</Link>
             </li>
             <li className={styles.li2}>
-              <Link href='/GastronomiaPage'>Gastronomía</Link>
+              <Link href='/Rubros/Gastronomia'>Gastronomía</Link>
             </li>
             <li className={styles.li2}>
-              <Link href='/DerivadosPage'>Derivados</Link>
+              <Link href='/Rubros/Derivados'>Derivados</Link>
             </li>
             <li className={styles.li2}>
-              <Link href='/TurismoPage'>Turismo/Enoturismo y Turismo Temático</Link>
+              <Link href='/Rubros/Turismo'>Turismo/Enoturismo y Turismo Temático</Link>
             </li>
             <li className={styles.li2}>
-              <Link href='/NuevosEmprendimientosPage'>Nuevos Emprendimientos</Link>
+              <Link href='/Rubros/NuevosEmprendimientos'>Nuevos Emprendimientos</Link>
             </li>
             <li className={styles.li2}>
-              <Link href='/ArtePage'>Arte</Link>
+              <Link href='/Rubros/Arte'>Arte</Link>
             </li>
           </ul>
         </li>
-        <li className={styles.li}><a href="#">Regiones</a>
+        <li className={styles.li}>Regiones
           <ul className={styles.ul}>
-            <li className={styles.li2}><Link href="/RegionesLatAmPage">LatinoAmérica</Link></li>
+            <li className={styles.li2}><Link href="/RegionesLatAm">LatinoAmérica</Link></li>
           </ul>
         </li>
-        <li className={styles.li}><Link href='/EventosPage'>Eventos</Link>
+        <li className={styles.li}><Link href='/Eventos/Eventos'>Eventos</Link>
           <ul className={styles.ul}>
-            <li className={styles.li2}><Link href='/EventosPage'>Eventos</Link></li>
-            <li className={styles.li2}><Link href='/AgendaPage'>Agenda</Link></li>
+            <li className={styles.li2}><Link href='/Eventos/Eventos'>Eventos</Link></li>
+            <li className={styles.li2}><Link href='/Eventos/Agenda'>Agenda</Link></li>
           </ul>
         </li>
-        <li className={styles.li}><Link href='/ImagenesPage'>Imágenes y Videos</Link>
+        <li className={styles.li}><Link href='/Imagenes'>Imágenes y Videos</Link>
         </li>
-        <li className={styles.li}><Link href="/LosHacedoresPage">Los Hacedores</Link>
+        <li className={styles.li}><Link href="/LosHacedores">Los Hacedores</Link>
         </li>
-        <li className={styles.li}><Link href='/ComercialPage'>Comercial</Link>
+        <li className={styles.li}><Link href='/Comercial'>Comercial</Link>
         </li>
-        <li className={styles.li}><Link href='/ContactoPage'>Contacto</Link>
+        <li className={styles.li}><Link href='/Contacto'>Contacto</Link>
         </li>
       </ul>
     </div>

@@ -7,9 +7,7 @@ const LosHacedores: React.FC = () => {
     return (
 
         <div className={styles.contenedor}>
-            <div className={styles.columnaImagen}>
-                <Image src={imagenQuienesSomos} alt="Quienes Somos" />
-            </div>
+            <Image src={''} alt="Imagen" width={855} height={819} className={styles.image} />
             <div className={styles.columnaTexto}>
                 <h1 className={styles.h1Titulo}>Los Hacedores</h1>
                 <p>

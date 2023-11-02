@@ -1,24 +1,33 @@
 .contenido {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centrar horizontalmente el contenido */
-    justify-content: center; /* Centrar verticalmente el contenido */
+    align-items: center;
+    /* Centrar horizontalmente el contenido */
+    justify-content: center;
+    /* Centrar verticalmente el contenido */
     padding-bottom: 1em;
 }
 
 .image {
-    background-image: url('../../../public/Proyecto-un-encanto.jpeg');
+    background-image: url('../../../public/Arte.jpeg');
+    background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    margin-top: 1em; /* Espacio entre el texto y la imagen */
-    width: 400px; /* Ajusta el ancho de la imagen según tu preferencia */
-    height: 300px; /* Ajusta el alto de la imagen según tu preferencia */
+    margin-top: 1em;
+    /* Espacio entre el texto y la imagen */
+    width: 400px;
+    /* Ajusta el ancho de la imagen según tu preferencia */
+    height: 300px;
+    /* Ajusta el alto de la imagen según tu preferencia */
     display: flex;
-    justify-content: center; /* Centrar horizontalmente la imagen */
-    align-items: center; /* Centrar verticalmente la imagen */
+    justify-content: center;
+    /* Centrar horizontalmente la imagen */
+    align-items: center;
+    /* Centrar verticalmente la imagen */
 }
 
 
 .texto {
-    text-align: center; /* Centrar el texto horizontalmente */
+    text-align: center;
+    /* Centrar el texto horizontalmente */
 }
