@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './LosHacedores.module.css';
 import Image from 'next/image';
-import imagenQuienesSomos from '../../assets/QuienesSomos.png';
+
 
 const LosHacedores: React.FC = () => {
     return (
