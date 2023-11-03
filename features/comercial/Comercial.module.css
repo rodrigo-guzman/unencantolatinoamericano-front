@@ -9,7 +9,9 @@
     flex: 1;
     padding: 1em;
 }
-
+.columnaTexto p{
+    font-family: Arial, sans-serif;
+}
 .columnaImagen {
     display: flex;
     justify-content: center;

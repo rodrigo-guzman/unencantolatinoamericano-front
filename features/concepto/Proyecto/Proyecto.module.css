@@ -1,6 +1,7 @@
 .contenido {
     display: flex;
     flex-direction: row;
+    /* La dirección flexible es fila en pantallas grandes */
     padding-bottom: 1em;
 }
 
@@ -8,15 +9,34 @@
     background-image: url('../../../public/Proyecto-un-encanto.jpeg');
     background-position: center;
     background-size: contain;
-    margin-left: auto;
-    /* Mover la imagen hacia la derecha */
+    background-repeat: no-repeat;
+    width: 350px;
+    /* Establece el ancho deseado */
+    height: 350px;
+    /* Establece la altura deseada */
 }
 
 .p {
     flex: 1;
+    margin-bottom: 2em;
+    /* Aumenta el margen inferior para separar los párrafos */
+    font-family: Arial, sans-serif;
+    /* Aplica la fuente Arial al texto */
+    font-size: 18px;
+    /* Aumenta el tamaño de la letra */
 }
 
-.p {
-    margin-bottom: 1em;
-    /* Agregar margen inferior para separar los párrafos */
+/* Estilos para pantallas pequeñas (máximo 768px) */
+@media screen and (max-width: 768px) {
+    .contenido {
+        flex-direction: column;
+        /* Cambia la dirección a columna en pantallas pequeñas */
+    }
+
+    .p {
+        text-align: center;
+        /* Centra el texto en pantallas pequeñas */
+        font-size: 16px;
+        /* Ajusta el tamaño de la letra para pantallas pequeñas */
+    }
 }
