@@ -17,7 +17,7 @@ const LosHacedores: React.FC = () => {
             ></iframe>
             </div>
             <div className={styles.columnaTexto}>
-                <h1 className={styles.h1Titulo}>Los Hacedores</h1>
+                <h1 className={styles.h1Titulo}>Con honor latino</h1>
                 <p>
                     Bienvenidos a un espacio de reconocimiento y celebración, donde tributamos a los verdaderos
                     titanes de la producción, el arte y la cultura de Latinoamérica. &quot;Con honor Latino&quot; es un rincón

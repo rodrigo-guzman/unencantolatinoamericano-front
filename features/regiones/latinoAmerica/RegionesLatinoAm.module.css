@@ -1,26 +1,28 @@
+
 .contenedor {
     display: flex;
+    flex-direction: row; /* Cambia a row para alinear elementos horizontalmente */
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin: 20px;
     padding: 20px;
 }
 
-.columnaImagen {
-    flex: 1;
-    padding: 20px;
-    max-width: 100%;
-    /* Ajusta el tamaño de la imagen a tu preferencia */
-}
-
-.columnaImagen img {
-    width: 100%;
-    height: auto;
+.image {
+    
+    background-size: cover;
+    background-position: center;
+    width: 60%; /* Ajusta el tamaño de la imagen a tu preferencia para pantallas grandes */
+    max-height: 70vh; /* Ajusta la altura máxima de la imagen a tu preferencia para pantallas grandes */
+    margin-right: 1em; /* Añade espacio entre la imagen y el texto en pantallas grandes */
 }
 
 .columnaTexto {
     flex: 1;
+    max-width: 50%;
     padding: 20px;
+    text-align: left; /* Alinea el texto a la izquierda */
+    font-family: Arial, sans-serif; /* Utiliza la fuente Arial para el texto */
 }
 
 .h1Titulo {
@@ -30,19 +32,37 @@
 }
 
 .pParrafo {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.5;
 }
 
-/* Puedes agregar estilos adicionales aquí para resaltar el diseño minimalista */
+/* Estilos adicionales para resaltar el diseño minimalista */
 
-.pParrafo {
-    font-size: 16px;
-    line-height: 1.5;
-}
+/* Estilos para pantallas pequeñas (máximo 768px) */
+@media screen and (max-width: 768px) {
+    .contenedor {
+        flex-direction: column;
+        padding: 10px;
+    }
 
-/* Estilos adicionales de tu elección para resaltar el diseño minimalista */
+    .image {
+        width: 100%; /* Ajusta el ancho de la imagen al 100% para pantallas pequeñas */
+        max-height: 70vh; /* Ajusta la altura máxima de la imagen a tu preferencia para pantallas pequeñas */
+        margin-right: 0; /* Elimina el margen entre la imagen y el texto en pantallas pequeñas */
+    }
 
-.image {
-    background-image: url('../../../public/Regiones.jpeg');
+    .columnaTexto {
+        max-width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .h1Titulo {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .pParrafo {
+        font-size: 14px;
+    }
 }

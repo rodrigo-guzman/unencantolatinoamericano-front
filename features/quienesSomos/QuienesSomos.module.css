@@ -10,7 +10,7 @@
 }
 
 .image {
-    background-image: url('../../public/QuienesSomos.jpeg');
+    
     background-size: cover;
     background-position: center;
     width: 60%; /* Ajusta el tamaño de la imagen a tu preferencia para pantallas grandes */
