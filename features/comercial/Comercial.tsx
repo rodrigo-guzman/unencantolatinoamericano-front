@@ -6,7 +6,7 @@ const Comercial: React.FC = () => {
     return (
         <div className={styles.contenedor}>
             <div className={styles.columnaTexto}>
-                <h1 className={styles.h1Titulo}>Comercial</h1>
+                <h1 className={styles.h1Titulo}>Packs y regalos empresariales</h1>
                 <p>
                     En nuestra sección de Packs de Regalos, no solo creamos obsequios, creamos experiencias inolvidables. Cada detalle es meticulosamente pensado y cada talento seleccionado con esmero, para dar forma a maravillas que serán tuyas para regalar y compartir. Prepárate para descubrir un mundo de regalos que deslumbran
                 </p>
