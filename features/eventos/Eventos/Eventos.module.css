@@ -1,25 +1,52 @@
 .contenido {
     display: flex;
     flex-direction: row;
-    /* Cambiar a row para alinear elementos horizontalmente */
     padding-bottom: 1em;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .image {
-    background-image: url('../../../public/EventosAgenda.jpeg');
-    background-position: center;
-    background-size: contain;
+    width: 50%;
+    max-height: 400px;
     margin-right: 1em;
-    /* Agregar margen derecho para separar la imagen del texto */
 }
 
-.texto {
-    display: flex;
-    /* Agregar flex para centrar el contenido verticalmente */
-    align-items: center;
-    /* Centrar el contenido verticalmente */
-    flex: 1;
-    /* Hace que el texto ocupe todo el espacio restante */
-    text-align: center;
-    /* Centrar el texto horizontalmente */
+.p {
+    font-size: 20px;
+    /* Establece el tamaño de letra para el párrafo */
+    font-family: Arial, sans-serif;
+    /* Aplica la fuente Arial al párrafo */
+    text-align: left;
+    /* Alinea el párrafo a la izquierda */
+}
+
+
+
+/* Estilos para pantallas pequeñas (máximo 768px) */
+@media screen and (max-width: 768px) {
+    .contenido {
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    .image {
+        width: 100%;
+        max-height: none;
+        margin-right: 0;
+        /* Elimina el margen derecho en pantallas pequeñas */
+        margin-top: 1em;
+        /* Agrega un espacio entre la imagen y el párrafo */
+    }
+
+    .p {
+        font-size: 18px;
+        margin-bottom: 1em;
+        /* Agrega un espacio entre los párrafos en pantallas pequeñas */
+    }
+
+    .h1 {
+        text-align: center;
+        /* Centra el h1 horizontalmente */
+    }
 }
