@@ -1,21 +1,44 @@
-.contenido {
+.contenedor {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    /* La dirección flexible es fila en pantallas grandes */
+    padding: 1em;
+}
+
+.columnaTexto {
+    flex: 1;
+    padding: 1em;
+}
+.columnaTexto p{
+    font-family: Arial, sans-serif;
+}
+.columnaImagen {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    /* Centrar horizontalmente el contenido */
-    text-align: center;
-    /* Centrar el texto horizontalmente */
-    padding-bottom: 1em;
+    padding: 1em;
 }
 
 .image {
-    background-image: url('../../../public/Gastronomia.jpeg');
+
     background-position: center;
     background-size: contain;
-    width: 400px;
-    /* Ajusta el ancho de la imagen según tu preferencia */
-    height: 400px;
-    /* Ajusta el alto de la imagen según tu preferencia */
-    margin-top: 1em;
-    /* Espacio entre el texto y la imagen */
+    background-repeat: no-repeat;
+    width: 100%;
+    /* Asegura que la imagen ocupe todo el espacio disponible en la columna de imagen */
+    height: 100%;
+    /* Asegura que la imagen ocupe todo el espacio disponible en la columna de imagen */
+}
+
+/* Estilos para pantallas pequeñas (máximo 768px) */
+@media screen and (max-width: 768px) {
+    .contenedor {
+        flex-direction: column;
+        /* Cambia la dirección a columna en pantallas pequeñas */
+    }
+
+    .columnaTexto {
+        text-align: center;
+        /* Centra el texto en pantallas pequeñas */
+    }
 }
