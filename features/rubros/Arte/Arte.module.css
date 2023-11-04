@@ -1,47 +1,27 @@
 .contenido {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    /* Centrar horizontalmente el contenido */
-    justify-content: center;
-    /* Centrar verticalmente el contenido */
+    align-items: center; /* Centrar horizontalmente el contenido */
     padding-bottom: 1em;
+    text-align: center; /* Centrar el texto horizontalmente */
+}
+
+.h1 {
+    text-align: center; /* Centrar horizontalmente el h1 */
 }
 
 .image {
-
-    background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    margin-top: 1em;
-    /* Espacio entre el texto y la imagen */
-    width: 500px;
-    /* Ajusta el ancho de la imagen según tu preferencia */
-    height: 300px;
-    /* Ajusta el alto de la imagen según tu preferencia */
-    display: flex;
-    justify-content: center;
-    /* Centrar horizontalmente la imagen */
-    align-items: center;
-    /* Centrar verticalmente la imagen */
-}
-
-.texto {
-    text-align: center;
-    font-family: Arial, sans-serif; 
-    /* Centrar el texto horizontalmente */
+    width: 100%; /* Hace que la imagen sea completamente responsiva */
+    max-height: 60vh; /* Altura máxima de la imagen en pantalla grande */
+    margin-top: 1em; /* Espacio entre el texto y la imagen */
+    margin: 0 auto; /* Centra horizontalmente la imagen */
 }
 
 /* Estilos para pantallas pequeñas (máximo 768px) */
 @media screen and (max-width: 768px) {
     .image {
-        width: 100%;
-        /* Ajusta el ancho de la imagen al 100% para que sea responsive */
-        height: auto;
-        /* Deja que la altura se ajuste automáticamente para mantener la proporción de la imagen */
-    }
-
-    .texto {
-        padding: 1em;
+        max-height: 40vh; /* Altura máxima de la imagen en pantalla pequeña */
     }
 }

@@ -4,29 +4,16 @@
 
 .contenido {
     display: flex;
-    flex-direction: column; /* Cambia a columna para alinear elementos verticalmente */
+    flex-direction: column;
     padding-bottom: 1em;
 }
 
 .image {
-    background-size: cover;
+    
+    background-size: 100% auto;
+    background-repeat: no-repeat;
     background-position: center;
-    width: 50%; /* Ajusta el tamaño de la imagen a tu preferencia para pantallas grandes */
-    max-height: 50vh; /* Ajusta la altura máxima de la imagen a tu preferencia para pantallas grandes */
-    margin-right: 0; /* Elimina el margen entre la imagen y el texto en pantallas grandes */
-}
-
-.texto {
-    flex: 1;
-    font-family: Arial, sans-serif; /* Utiliza la fuente Arial para el texto */
-    text-align: left; /* Alinea el texto a la izquierda */
-}
-
-/* Estilos para pantallas pequeñas (máximo 768px) */
-@media screen and (max-width: 768px) {
-    .image {
-        width: 110%; /* Aumenta el ancho de la imagen en pantallas pequeñas */
-        max-height: 55vh; /* Ajusta la altura máxima de la imagen a tu preferencia para pantallas pequeñas */
-        margin-top: 1em; /* Agrega espacio entre el título y la imagen en pantallas pequeñas */
-    }
+    width: 100%;
+    height: auto;
+    margin-top: 2em;
 }
