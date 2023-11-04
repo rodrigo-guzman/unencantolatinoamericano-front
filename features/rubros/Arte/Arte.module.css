@@ -9,13 +9,13 @@
 }
 
 .image {
-    background-image: url('../../../public/Arte.jpeg');
+
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     margin-top: 1em;
     /* Espacio entre el texto y la imagen */
-    width: 400px;
+    width: 500px;
     /* Ajusta el ancho de la imagen según tu preferencia */
     height: 300px;
     /* Ajusta el alto de la imagen según tu preferencia */
@@ -26,8 +26,21 @@
     /* Centrar verticalmente la imagen */
 }
 
-
 .texto {
     text-align: center;
     /* Centrar el texto horizontalmente */
+}
+
+/* Estilos para pantallas pequeñas (máximo 768px) */
+@media screen and (max-width: 768px) {
+    .image {
+        width: 100%;
+        /* Ajusta el ancho de la imagen al 100% para que sea responsive */
+        height: auto;
+        /* Deja que la altura se ajuste automáticamente para mantener la proporción de la imagen */
+    }
+
+    .texto {
+        padding: 1em;
+    }
 }
