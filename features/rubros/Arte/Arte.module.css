@@ -28,6 +28,7 @@
 
 .texto {
     text-align: center;
+    font-family: Arial, sans-serif; 
     /* Centrar el texto horizontalmente */
 }
 
