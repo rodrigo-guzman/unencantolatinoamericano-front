@@ -1,13 +1,21 @@
 import React from 'react';
 import styles from './LosHacedores.module.css';
-import Image from 'next/image';
+
 
 
 const LosHacedores: React.FC = () => {
     return (
 
         <div className={styles.contenedor}>
-            <Image src={''} alt="Imagen" width={855} height={819} className={styles.image} />
+            <div className={styles.image}>
+            <iframe
+                width=""
+                height=""
+                src="https://www.youtube.com/embed/TU_VIDEO_ID_AQUI"
+                title="Video 1"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            ></iframe>
+            </div>
             <div className={styles.columnaTexto}>
                 <h1 className={styles.h1Titulo}>Los Hacedores</h1>
                 <p>
@@ -18,6 +26,7 @@ const LosHacedores: React.FC = () => {
                     logros de los protagonistas de la región
                 </p>
             </div>
+
         </div>
 
     );
