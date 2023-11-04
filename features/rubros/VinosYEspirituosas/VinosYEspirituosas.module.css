@@ -10,5 +10,10 @@
 
 .image {
     background-image: url('../../../public/Vinosyespirituosas.jpeg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: auto;
     margin-top: 2em;
 }
