@@ -1,14 +1,65 @@
-.h1 {
-    padding-bottom: 0.5em;
+/* Estilos para pantallas grandes (más de 768px) */
+@media screen and (min-width: 769px) {
+    .contenido {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Centrar los elementos horizontalmente */
+        padding-bottom: 1em;
+    }
+
+    .image {
+        width: 50%;
+        /* Reducir el ancho de la imagen al 50% en pantallas grandes */
+        max-height: none;
+        /* Eliminar la altura máxima para permitir que la imagen se ajuste correctamente */
+        margin-top: 1em;
+        /* Agregar espacio entre el título/párrafo y la imagen en pantallas grandes */
+    }
+
+    .p {
+        font-size: 20px;
+        /* Ajustar el tamaño de la fuente del párrafo en pantallas grandes */
+        font-family: Arial, sans-serif;
+        /* Aplicar la fuente Arial al párrafo en pantallas grandes */
+    }
+
+    .h1 {
+        text-align: center;
+        /* Centrar el h1 horizontalmente en pantallas grandes */
+    }
 }
 
-.contenido {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 1em;
-}
+/* Estilos para pantallas pequeñas (máximo 768px) */
+@media screen and (max-width: 768px) {
+    .contenido {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Centrar los elementos horizontalmente en pantallas pequeñas */
+        padding: 1em;
+    }
 
-.image {
-    background-image: url('../../../public/infusiones.jpeg');
-    margin-top: 2em;
+    .image {
+        width: 100%;
+        /* Ajustar el ancho de la imagen al 100% para que sea responsive en pantallas pequeñas */
+        max-height: none;
+        /* Eliminar la altura máxima para permitir que la imagen se ajuste correctamente */
+        margin-top: 1em;
+        /* Agregar espacio entre el título/párrafo y la imagen en pantallas pequeñas */
+    }
+
+    .p {
+        font-size: 18px;
+        /* Ajustar el tamaño de la fuente del párrafo para pantallas pequeñas */
+        font-family: Arial, sans-serif;
+        /* Aplicar la fuente Arial al párrafo en pantallas pequeñas */
+        text-align: center;
+        /* Centrar el texto horizontalmente en pantallas pequeñas */
+    }
+
+    .h1 {
+        text-align: center;
+        /* Centrar el h1 horizontalmente en pantallas pequeñas */
+    }
 }
