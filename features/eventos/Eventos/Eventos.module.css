@@ -12,16 +12,12 @@
     margin-right: 1em;
 }
 
+
 .p {
-    font-size: 20px;
-    /* Establece el tamaño de letra para el párrafo */
-    font-family: Arial, sans-serif;
-    /* Aplica la fuente Arial al párrafo */
-    text-align: left;
-    /* Alinea el párrafo a la izquierda */
+    font-size: 28px; /* Establece el tamaño de letra para el párrafo */
+    font-family: Arial, sans-serif; /* Aplica la fuente Arial al párrafo */
+    text-align: left; /* Alinea el párrafo a la izquierda */
 }
-
-
 
 /* Estilos para pantallas pequeñas (máximo 768px) */
 @media screen and (max-width: 768px) {
@@ -32,21 +28,18 @@
 
     .image {
         width: 100%;
+        height: auto;
         max-height: none;
         margin-right: 0;
-        /* Elimina el margen derecho en pantallas pequeñas */
         margin-top: 1em;
-        /* Agrega un espacio entre la imagen y el párrafo */
     }
 
     .p {
         font-size: 18px;
         margin-bottom: 1em;
-        /* Agrega un espacio entre los párrafos en pantallas pequeñas */
     }
 
-    .h1 {
+    .contenido h1 {
         text-align: center;
-        /* Centra el h1 horizontalmente */
     }
 }

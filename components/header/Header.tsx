@@ -8,10 +8,11 @@ const Header: React.FC = () => {
     return (
         <>
             <div className={styles.header}>
+            <div className={styles.logo}></div>
                 <div className={styles.navbar}>
-                    <div className={styles.logo}></div>
+                    
                     <Navbar />
-                </div>
+                    </div>
                 <div className={styles.content}>
                     <h1 className={styles.h1}>Un Encanto Latinoamericano</h1>
                     <p className={styles.p}>Sinfonía de placeres</p>

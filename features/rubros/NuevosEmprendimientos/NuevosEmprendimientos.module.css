@@ -1,27 +1,40 @@
-.contenido {
+.contenedor {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centrar horizontalmente el contenido */
-    padding-bottom: 1em;
-    text-align: center; /* Centrar el texto horizontalmente */
+    padding: 1em;
+    align-items: center;
+    text-align: center;
 }
 
-.h1 {
-    text-align: center; /* Centrar horizontalmente el h1 */
+.columnaTexto {
+    padding: 1em;
+    text-align: center;
+}
+
+.columnaTexto p {
+    font-family: Arial, sans-serif;
+}
+
+.columnaImagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
 }
 
 .image {
     background-position: center;
     background-size: contain;
-    width: 100%; /* Hace que la imagen sea completamente responsiva */
-    max-height: 60vh; /* Altura máxima de la imagen en pantalla grande */
-    margin-top: 1em; /* Espacio entre el texto y la imagen */
-    margin: 0 auto; /* Centra horizontalmente la imagen */
+    background-repeat: no-repeat;
+    width: auto;
+    height: auto;
 }
+
 
 /* Estilos para pantallas pequeñas (máximo 768px) */
 @media screen and (max-width: 768px) {
     .image {
         max-height: 40vh; /* Altura máxima de la imagen en pantalla pequeña */
+        height: auto;
     }
 }

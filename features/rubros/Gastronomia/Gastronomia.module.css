@@ -1,8 +1,9 @@
 .contenedor {
     display: flex;
     flex-direction: column;
-    /* Cambia la dirección a columna en pantallas grandes */
     padding: 1em;
+    align-items: center;
+    text-align: center;
 }
 
 .columnaTexto {
@@ -25,19 +26,22 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    width: 100%; /* Cambia el valor del ancho de la imagen según tus necesidades */
-    height: auto; /* Ajusta la altura para mantener la relación de aspecto de la imagen */
+    width: auto;
+    height: auto;
 }
 
 /* Estilos para pantallas pequeñas (máximo 768px) */
 @media screen and (max-width: 768px) {
     .contenedor {
         flex-direction: column;
-        /* Cambia la dirección a columna en pantallas pequeñas */
     }
 
     .columnaTexto {
         text-align: center;
-        /* Centra el texto en pantallas pequeñas */
+    }
+
+    .image {
+        max-width: 100%; /* Ajusta el ancho máximo de la imagen al 100% */
+        height: auto;
     }
 }

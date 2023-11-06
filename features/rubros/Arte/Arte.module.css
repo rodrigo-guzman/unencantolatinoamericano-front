@@ -13,8 +13,8 @@
 .image {
     background-position: center;
     background-size: contain;
-    width: 100%; /* Hace que la imagen sea completamente responsiva */
-    max-height: 60vh; /* Altura máxima de la imagen en pantalla grande */
+    width: auto; /* Hace que la imagen sea completamente responsiva */
+    max-height: auto; /* Altura máxima de la imagen en pantalla grande */
     margin-top: 1em; /* Espacio entre el texto y la imagen */
     margin: 0 auto; /* Centra horizontalmente la imagen */
 }

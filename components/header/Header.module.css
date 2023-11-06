@@ -5,6 +5,8 @@
         url('../../public/fuentes/Sandrina.ttf') format('truetype');
 }
 
+
+
 /* Media Query para pantallas pequeñas (menos de 600px de ancho) */
 @media screen and (max-width: 600px) {
     .header {
@@ -21,19 +23,21 @@
     }
 
     .content {
-        font-family: 'North Carossela';
-        font-size: 20px;
-        text-align: center;
-        color: #fff;
-        font-weight: normal;
-        padding-bottom: 15em;
-    }
-
+    font-family: 'North Carossela';
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+    width: 80%;
+    margin: 10% auto 1%;
+    font-weight: normal;
+    position: relative; /* Establece la posición como relativa */
+    z-index: 1; /* Ajusta el índice Z para que esté por encima del fondo y detrás del menú desplegable */
+}
     .navbar {
         padding-bottom: 13em;
         font-size: 14px;
         font-family: 'Arial';
-        /* Usa posición relativa para que .navbar siga el flujo normal */
+        position: relative;
     }
 
 
@@ -135,6 +139,7 @@
         width: 80%;
         margin: 10% auto 1%;
         font-weight: normal;
+        
     }
 
     .header .logo {
@@ -159,6 +164,12 @@
         font-family: 'Arial';
         padding-top: 2em;
         padding-bottom: 4em !important;
+        
+    }
+    .navbar {
+        /* Resto de tus estilos */
+        position: relative;
+        z-index: 2; /* Asegúrate de que el menú desplegable esté en la capa superior */
     }
 
     .p {

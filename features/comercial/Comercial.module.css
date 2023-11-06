@@ -4,7 +4,9 @@
     /* La dirección flexible es fila en pantallas grandes */
     padding: 1em;
 }
-
+.h1Titulo{
+    padding: 1em;
+}
 .columnaTexto {
     flex: 1;
     padding: 1em;

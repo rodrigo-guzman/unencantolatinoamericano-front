@@ -6,7 +6,7 @@ const Eventos: React.FC = () => {
         <div className={styles.contenedor}>
             <h1 className={styles.h1}>EVENTOS</h1>
             <div className={styles.contenido}>
-
+            
                 <p className={styles.p}>
                     Latinoamérica es un continente vivo y vibrante, donde la belleza natural, la gastronomía exquisita
                     y la diversidad cultural se entrelazan de manera fascinante. A través de una serie de exquisitos y
