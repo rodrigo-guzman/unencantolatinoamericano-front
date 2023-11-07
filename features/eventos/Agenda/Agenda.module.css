@@ -1,52 +1,44 @@
-.contenido {
+/* Agenda.module.css */
+
+.contenedor {
     display: flex;
     flex-direction: row;
-    padding-bottom: 1em;
-    align-items: center;
-    justify-content: space-between;
+    padding: 1em;
+}
+
+.columnaTexto {
+    flex: 1;
+    padding: 1em;
+    text-align: left;
+}
+
+.columnaTexto p {
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+}
+
+.columnaImagen {
+    flex: 1; /* Cambia a flex 1 para ocupar el mismo espacio que la columna de texto */
+    padding: 1em;
+    text-align: center; /* Alinea el contenido horizontalmente */
 }
 
 .image {
-    width: 50%;
-    max-height: 400px;
-    margin-right: 1em;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
 }
-
-.p {
-    font-size: 20px;
-    /* Establece el tamaño de letra para el párrafo */
-    font-family: Arial, sans-serif;
-    /* Aplica la fuente Arial al párrafo */
-    text-align: left;
-    /* Alinea el párrafo a la izquierda */
-}
-
-
 
 /* Estilos para pantallas pequeñas (máximo 768px) */
 @media screen and (max-width: 768px) {
-    .contenido {
+    .contenedor {
         flex-direction: column;
-        padding: 1em;
     }
 
-    .image {
-        width: 100%;
-        max-height: none;
-        margin-right: 0;
-        /* Elimina el margen derecho en pantallas pequeñas */
-        margin-top: 1em;
-        /* Agrega un espacio entre la imagen y el párrafo */
-    }
-
-    .p {
-        font-size: 18px;
-        margin-bottom: 1em;
-        /* Agrega un espacio entre los párrafos en pantallas pequeñas */
-    }
-
-    .h1 {
+    .columnaTexto,
+    .columnaImagen {
         text-align: center;
-        /* Centra el h1 horizontalmente */
     }
 }

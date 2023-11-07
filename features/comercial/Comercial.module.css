@@ -6,6 +6,7 @@
 }
 .h1Titulo{
     padding: 1em;
+    margin-left: -32px;
 }
 .columnaTexto {
     flex: 1;
