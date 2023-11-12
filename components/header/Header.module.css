@@ -2,10 +2,13 @@
 @font-face {
     font-family: 'OpalineUEL';
     src: url('../../public/fuentes/Opaline.woff') format('woff'),
-        url('../../public/fuentes/Sandrina.ttf') format('truetype');
+
 }
 
-
+@font-face {
+    font-family: 'Handlettery';
+    src: url('../../public/fuentes/HANDLETTERYDEMO-REGULAR.OTF') format('opentype');
+}
 
 /* Media Query para pantallas pequeñas (menos de 600px de ancho) */
 @media screen and (max-width: 600px) {
@@ -51,6 +54,11 @@
         background-position: center;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         border-radius: 10px; */
+    }
+    .p {
+
+        font-family: 'Handlettery';
+        font-size: 50px;
     }
 
 }
@@ -106,6 +114,11 @@
         padding-right: 3em;
         font-size: 18px;
         font-family: 'Arial';
+    }
+    .p {
+
+        font-family: 'Handlettery';
+        font-size: 60px;
     }
 }
 
@@ -174,11 +187,15 @@
 
     .p {
         padding-bottom: 1em;
+        font-family: 'Handlettery';
+        font-size: 80px;
     }
 }
 
 .p {
-    padding-top: 1em;
+
+    font-family: 'Handlettery', !important;
+    
 }
 
 .h1 {

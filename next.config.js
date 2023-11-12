@@ -1,13 +1,11 @@
-//** @type {import('next').NextConfig} */
+/** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
         domains: ['firebasestorage.googleapis.com'],
+        unoptimized: true,
     },
-    output: {
-        // Ruta relativa a la carpeta del proyecto donde se exportará la aplicación.
-        // En tu caso, deseas exportar a la carpeta 'out'.
-        outputPath: 'out',
-    },
+    output: 'export', // Use this line to specify the export option
+    // Your configuration options
 };
 
 module.exports = nextConfig;

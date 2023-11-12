@@ -23,7 +23,7 @@
 }
 
 .image {
-    background-image: url('../../public/Comercial.jpeg');
+    
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -45,3 +45,4 @@
         /* Centra el texto en pantallas pequeñas */
     }
 }
+

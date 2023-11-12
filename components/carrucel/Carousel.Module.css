@@ -1,0 +1,106 @@
+
+/*------- carrucel ------*/
+
+.peliculasRecomendadas .contenedorCarrusel{
+    width: 100%;
+	padding: 20px 0;
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+.peliculasRecomendadas .contenedorCarrusel .carrusel{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.peliculasRecomendadas .contenedorCarrusel .pelicula{
+    min-width: 20%;
+	transition: .3s ease all;
+	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+}
+.peliculasRecomendadas .contenedorCarrusel .pelicula.hover{
+    transform: scale(1.2);
+    transform-origin: center;
+}
+.peliculasRecomendadas .contenedorCarrusel .carrusel .img{
+    width: 100%;
+    vertical-align: top;
+
+}
+
+/*---------- contenedor de titulo y controles ----*/
+
+.contenedorTituloControles{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.contenedorTituloControles h3{
+    color: aliceblue;
+    font-size: 30px;
+}
+.contenedorTituloControles .indicadores button{
+    background: #fff;
+    height: 3px;
+    width: 10px;
+    cursor: pointer;
+    border: none;
+    margin-right: 2px;
+}
+.contenedorTituloControles .indicadores button:hover,
+.contenedorTituloControles .indicadores button:active{
+    background: red;
+
+}
+/* --------- contenedor principal y flechas -----*/
+.peliculasRecomendadas{
+    margin-bottom: 70px;
+}
+.peliculasRecomendadas .contenedorPrincipal{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.peliculasRecomendadas .contenedorPrincipal .flechaIzquierda,
+.peliculasRecomendadas .contenedorPrincipal .flechaDerecha{
+    position: absolute;
+    border: none;
+    background: rgba(0, 0, 0, 0.3);
+    font-size: 40px;
+    height: 50%;
+    top: calc(50% - 25%);
+    line-height: 40px;
+    width: 50px;
+    color: aliceblue;
+    cursor: pointer;
+    z-index: 500;
+    transition: .2s ease all;
+}
+.peliculasRecomendadas .contenedorPrincipal .flechaIzquierda:hover,
+.peliculasRecomendadas .contenedorPrincipal .flechaDerecha:hover{
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.peliculasRecomendadas .contenedorPrincipal .flechaIzquierda{
+    left: 0;
+}
+.peliculasRecomendadas .contenedorPrincipal .flechaDerecha{
+    right: 0;
+}
+
+
+
+@media screen and (max-width:800px) {
+    .peliculasRecomendadas .contenedorCarrusel{
+        overflow: visible;
+    }
+
+    .peliculasRecomendadas .contenedorCarrusel .carrusel{
+        display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+	}
+    .peliculasRecomendadas .indicadores,
+	.peliculasRecomendadas .flechaIzquierda,
+	.peliculasRecomendadas .flechaDerecha {
+		display: none;
+	}
+}
