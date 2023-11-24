@@ -8,7 +8,7 @@
 .contenido {
     width: 50%; /* Asigna el 50% del ancho para el contenido en todas las pantallas */
 }
-
+.p{font-family: Arial, Helvetica, sans-serif;}
 .imageContainer {
     width: 50%; /* Asigna el 50% del ancho para la imagen en todas las pantallas */
     text-align: right; /* Alinea la imagen a la derecha dentro de su contenedor */
@@ -35,17 +35,29 @@
 /* Estilos para pantallas pequeñas (máximo 768px) */
 @media screen and (max-width: 768px) {
     .contenedor {
-        flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
-        width: 100%; /* Haz que el contenedor ocupe todo el ancho en pantallas pequeñas */
+        flex-direction: column;
     }
 
-    .imageContainer {
-        text-align: center; /* Centra la imagen en pantallas pequeñas */
+    .contenedor,
+    .contenido {
+        text-align: center;
+        width: 120%;
+        margin-left: -30px;
     }
+    .contenido{
+        margin-left: 15px;
+        text-align: center;
 
-    .image {
-        width: 100%; /* Asegura que la imagen ocupe todo el ancho en pantallas pequeñas */
-        max-width: 300px; /* Limita el ancho máximo de la imagen en pantallas pequeñas */
-        height: auto; /* Mantén la altura automática para mantener la proporción cuadrada */
+
+    }
+    .image{
+        width: 250%;
+        height: 250%; 
+        margin-left: -80px;
+    }
+    .h1Titulo{
+        font-size: 25px;
+        text-align: center;
+
     }
 }
