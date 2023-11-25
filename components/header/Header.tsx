@@ -14,7 +14,7 @@ const Header: React.FC = () => {
                 </div>
                 <div className={styles.content}>
                     <h1 className={styles.h1}>Un Encanto Latinoamericano</h1>
-                    <p className={styles.p}>Sinfonía de placeres</p>
+                    <p className={styles.p}>Sinfonia de placeres</p>
                     <SocialMediaLinks />
                 </div>
             </div>

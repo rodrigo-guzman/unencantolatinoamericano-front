@@ -5,6 +5,12 @@
         url('../../public/fuentes/Sandrina.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Handlettery';
+    src: url('../../public/fuentes/HANDLETTERYDEMO-REGULAR.OTF') format('opentype');
+}
+
+
 /* Media Query para pantallas pequeñas (menos de 600px de ancho) */
 @media screen and (max-width: 600px) {
     .header {
@@ -162,13 +168,18 @@
     }
 
     .p {
+        padding-top: 0.5em;
         padding-bottom: 1em;
+        font-family: 'Handlettery' !important;
+        font-size: 2em;
+    }
+
+    .h1 {
+        padding-top: 1em;
     }
 }
 
-.p {
-    padding-top: 2em;
-}
+
 
 .h1 {
     font-family: 'OpalineUEL' !important;
