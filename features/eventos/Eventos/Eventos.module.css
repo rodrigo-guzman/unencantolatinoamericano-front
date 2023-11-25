@@ -1,25 +1,65 @@
-.contenido {
+/* Agenda.module.css */
+
+.contenedor {
     display: flex;
     flex-direction: row;
-    /* Cambiar a row para alinear elementos horizontalmente */
-    padding-bottom: 1em;
+    padding: 1em;
+}
+
+.columnaTexto {
+    flex: 1;
+    padding: 1em;
+    text-align: left;
+}
+.p{font-family: Arial, Helvetica, sans-serif;}
+.columnaTexto p {
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+}
+
+.columnaImagen {
+    flex: 1; /* Cambia a flex 1 para ocupar el mismo espacio que la columna de texto */
+    padding: 1em;
+    text-align: center; /* Alinea el contenido horizontalmente */
 }
 
 .image {
-    background-image: url('../../../public/EventosAgenda.jpeg');
     background-position: center;
     background-size: contain;
-    margin-right: 1em;
-    /* Agregar margen derecho para separar la imagen del texto */
+    background-repeat: no-repeat;
+    width: 90%;
+    height: 90%;
 }
 
-.texto {
-    display: flex;
-    /* Agregar flex para centrar el contenido verticalmente */
-    align-items: center;
-    /* Centrar el contenido verticalmente */
-    flex: 1;
-    /* Hace que el texto ocupe todo el espacio restante */
-    text-align: center;
-    /* Centrar el texto horizontalmente */
+/* Estilos para pantallas pequeñas (máximo 768px) */
+@media screen and (max-width: 768px) {
+    .contenedor {
+        flex-direction: column;
+    }
+
+    .contenedor,
+    .contenido {
+        text-align: center;
+        width: 150%;
+        margin-left: -30px;
+    }
+    .columnaTexto{
+        margin-left: 15px;
+        text-align: center;
+        width: 110%;
+        margin-left: -20px;
+
+
+    }
+    .image{
+        width: 120%;
+        height: 120%; 
+        margin-left: -25px;
+    }
+    .h1{
+        font-size: 25px;
+        text-align: center;
+        margin-left: -30px;
+
+    }
 }

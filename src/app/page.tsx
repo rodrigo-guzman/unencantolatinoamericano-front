@@ -11,9 +11,10 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title >Un Encanto LatinoAmericano</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="public/favicon.ico" />
       </Head>
       <HomePage />
+      
     </>
   )
 }

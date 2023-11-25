@@ -2,8 +2,10 @@
 const nextConfig = {
     images: {
         domains: ['firebasestorage.googleapis.com'],
+        unoptimized: true,
     },
-    output: 'export',
+    output: 'export', // Use this line to specify the export option
+    // Your configuration options
 };
 
 module.exports = nextConfig;

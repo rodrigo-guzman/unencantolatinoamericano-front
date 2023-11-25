@@ -1,23 +1,40 @@
-.contenido {
+.contenedor {
     display: flex;
     flex-direction: column;
+    padding: 1em;
     align-items: center;
-    /* Centrar horizontalmente el contenido */
-    padding-bottom: 1em;
     text-align: center;
-    /* Centrar el texto horizontalmente */
+}
+
+.columnaTexto {
+    padding: 1em;
+    text-align: center;
+}
+
+.columnaTexto p {
+    font-family: Arial, sans-serif;
+}
+
+.columnaImagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
 }
 
 .image {
-    background-image: url('../../../public/NuevosEmprendimientos.jpeg');
     background-position: center;
     background-size: contain;
-    width: 500px;
-    /* Ajusta el ancho de la imagen según tu preferencia */
-    height: 400px;
-    /* Ajusta el alto de la imagen según tu preferencia */
-    margin-top: 1em;
-    /* Espacio entre el texto y la imagen */
-    margin: 0 auto;
-    /* Centra horizontalmente la imagen */
+    background-repeat: no-repeat;
+    width: auto;
+    height: auto;
+}
+
+
+/* Estilos para pantallas pequeñas (máximo 768px) */
+@media screen and (max-width: 768px) {
+    .image {
+        max-height: 40vh; /* Altura máxima de la imagen en pantalla pequeña */
+        height: auto;
+    }
 }

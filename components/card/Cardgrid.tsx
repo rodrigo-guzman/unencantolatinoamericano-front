@@ -24,7 +24,7 @@ const CardGrid: React.FC<CardGridProps> = ({ indexs }) => {
         },
         {
             id: 2,
-            image: 'https://firebasestorage.googleapis.com/v0/b/un-encanto-latinoamericano.appspot.com/o/Card-Turismo.jpg?alt=media&token=8ceb1fa2-b3de-4bb3-ac7a-73eefb369cbf&_gl=1*1aticd*_ga*MTQ4ODY2MzM3NS4xNjk0Mjk3MzIx*_ga_CW55HF8NVT*MTY5ODkwMTU0NC42LjEuMTY5ODkwMjI2OS40OS4wLjA.',
+            image: 'https://firebasestorage.googleapis.com/v0/b/un-encanto-latinoamericano.appspot.com/o/Card-GiraEncantadora.jpeg?alt=media&token=69cb7ab6-65d6-4e50-92ed-edf1859c1f73&_gl=1*10f66ik*_ga*MTQ4ODY2MzM3NS4xNjk0Mjk3MzIx*_ga_CW55HF8NVT*MTY5OTExMDUwMy44LjEuMTY5OTExMTkwMC4yLjAuMA.',
             text: 'Una gira encantadora',
             description: 'Sabores que conquistan: Explora nuestra selección de bebidas y alimentos irresistibles',
             link: '/Rubros/Turismo',

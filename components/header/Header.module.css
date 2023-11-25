@@ -2,6 +2,13 @@
 @font-face {
     font-family: 'OpalineUEL';
     src: url('../../public/fuentes/Opaline.woff') format('woff'),
+
+}
+
+@font-face {
+    font-family: 'Sandrina';
+    src: url('../../public/fuentes/Sandrina.ttf') format('woff'),
+        url('../../public/fuentes/Sandrina.ttf') format('woff2'),
         url('../../public/fuentes/Sandrina.ttf') format('truetype');
 }
 
@@ -27,21 +34,32 @@
     }
 
     .content {
-        font-family: 'North Carossela';
-        font-size: 20px;
+        font-size: 25px;
         text-align: center;
         color: #fff;
+        width: 80%;
+        margin: 1%;
+        /* Disminuye el margen superior para acercar el contenido */
         font-weight: normal;
-        padding-bottom: 15em;
+        position: relative;
+        z-index: 1;
+        margin-top: -30px;
     }
+
+
+
 
     .navbar {
-        padding-bottom: 13em;
+
+
+        padding-bottom: 10em;
+        /* Ajusta el espaciado inferior de la barra de navegación */
         font-size: 14px;
         font-family: 'Arial';
-        /* Usa posición relativa para que .navbar siga el flujo normal */
+        top: 0;
+        position: absolute;
+        margin-top: 20px;
     }
-
 
     .header .logo {
         display: none;
@@ -53,6 +71,24 @@
         background-position: center;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         border-radius: 10px; */
+    }
+
+    .pSandrina {
+
+        margin-top: 10px;
+        margin-left: -50px;
+    }
+
+    .p {
+
+        font-family: 'Sandrina';
+        font-size: 40px;
+    }
+
+    .h1 {
+        font-size: 35px;
+        font-family: 'OpalineUEL';
+        text-align: center;
     }
 
 }
@@ -78,7 +114,7 @@
         /* Ocupa todo el alto del header */
 
         position: relative;
-        font-family: 'North Carossela';
+
         font-size: 30px;
         text-align: center;
         color: #fff;
@@ -109,6 +145,17 @@
         font-size: 18px;
         font-family: 'Arial';
     }
+
+    .p {
+
+        font-family: 'Sandrina';
+        font-size: 60px;
+    }
+
+    .h1 {
+
+        font-family: 'OpalineUEL';
+    }
 }
 
 /* Media Query para pantallas grandes (más de 900px de ancho) */
@@ -120,6 +167,30 @@
         background-size: cover;
         background-position: center;
         text-align: center;
+
+    }
+
+
+    .pSandrina {
+        background-color: transparent;
+        /* Fondo transparente */
+        width: 80%;
+        /* Ancho del contenedor */
+        height: 150px;
+        margin: 0 auto;
+        /* Centrar horizontalmente */
+        padding: 30px;
+        /* Espaciado interno */
+        border-radius: 10px;
+        /* Bordes redondeados */
+        box-sizing: border-box;
+        /* Incluye el padding en el ancho */
+        position: relative;
+        /* Establece la posición */
+        z-index: 1;
+        /* Asegura que esté por encima de otros elementos */
+        margin-left: 65px;
+        /* Mover ligeramente hacia la izquierda */
 
     }
 
@@ -141,6 +212,7 @@
         width: 80%;
         margin: 10% auto 1%;
         font-weight: normal;
+
     }
 
     .header .logo {
@@ -165,22 +237,36 @@
         font-family: 'Arial';
         padding-top: 2em;
         padding-bottom: 4em !important;
+
+    }
+
+    .navbar {
+        /* Resto de tus estilos */
+        position: relative;
+        z-index: 2;
+        /* Asegúrate de que el menú desplegable esté en la capa superior */
     }
 
     .p {
         padding-top: 0.5em;
         padding-bottom: 1em;
-        font-family: 'Handlettery' !important;
-        font-size: 2em;
+        font-family: 'Sandrina';
+        font-size: 140px;
     }
 
     .h1 {
-        padding-top: 1em;
+        margin-top: 10px;
     }
 }
 
+.p {
 
+    font-family: 'Sandrina', !important;
+
+}
 
 .h1 {
     font-family: 'OpalineUEL' !important;
+    padding-top: 2em;
+
 }

@@ -1,33 +1,27 @@
 .contenido {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    /* Centrar horizontalmente el contenido */
-    justify-content: center;
-    /* Centrar verticalmente el contenido */
+    align-items: center; /* Centrar horizontalmente el contenido */
     padding-bottom: 1em;
+    text-align: center; /* Centrar el texto horizontalmente */
+}
+
+.h1 {
+    text-align: center; /* Centrar horizontalmente el h1 */
 }
 
 .image {
-    background-image: url('../../../public/Arte.jpeg');
-    background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    margin-top: 1em;
-    /* Espacio entre el texto y la imagen */
-    width: 400px;
-    /* Ajusta el ancho de la imagen según tu preferencia */
-    height: 300px;
-    /* Ajusta el alto de la imagen según tu preferencia */
-    display: flex;
-    justify-content: center;
-    /* Centrar horizontalmente la imagen */
-    align-items: center;
-    /* Centrar verticalmente la imagen */
+    width: auto; /* Hace que la imagen sea completamente responsiva */
+    max-height: auto; /* Altura máxima de la imagen en pantalla grande */
+    margin-top: 1em; /* Espacio entre el texto y la imagen */
+    margin: 0 auto; /* Centra horizontalmente la imagen */
 }
 
-
-.texto {
-    text-align: center;
-    /* Centrar el texto horizontalmente */
+/* Estilos para pantallas pequeñas (máximo 768px) */
+@media screen and (max-width: 768px) {
+    .image {
+        max-height: 40vh; /* Altura máxima de la imagen en pantalla pequeña */
+    }
 }

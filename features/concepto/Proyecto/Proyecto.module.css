@@ -1,22 +1,63 @@
-.contenido {
+/* Estilos CSS */
+.contenedor {
     display: flex;
-    flex-direction: row;
+    align-items: center; /* Alinea verticalmente el contenido del contenedor */
     padding-bottom: 1em;
 }
 
+.contenido {
+    width: 50%; /* Asigna el 50% del ancho para el contenido en todas las pantallas */
+}
+.p{font-family: Arial, Helvetica, sans-serif;}
+.imageContainer {
+    width: 50%; /* Asigna el 50% del ancho para la imagen en todas las pantallas */
+    text-align: right; /* Alinea la imagen a la derecha dentro de su contenedor */
+}
+
+/* Estilos para la imagen */
 .image {
-    background-image: url('../../../public/Proyecto-un-encanto.jpeg');
+    width: 80%; /* Asegura que la imagen ocupe todo el ancho disponible en su contenedor */
     background-position: center;
     background-size: contain;
-    margin-left: auto;
-    /* Mover la imagen hacia la derecha */
+    background-repeat: no-repeat;
+    height: auto;
+    /* Añade otros estilos necesarios para el tamaño y apariencia de la imagen */
 }
 
-.p {
+/* Estilos para los párrafos */
+.p1, .p2, .p3 {
     flex: 1;
+    margin-bottom: 2em;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
 }
 
-.p {
-    margin-bottom: 1em;
-    /* Agregar margen inferior para separar los párrafos */
+/* Estilos para pantallas pequeñas (máximo 768px) */
+@media screen and (max-width: 768px) {
+    .contenedor {
+        flex-direction: column;
+    }
+
+    .contenedor,
+    .contenido {
+        text-align: center;
+        width: 120%;
+        margin-left: -30px;
+    }
+    .contenido{
+        margin-left: 15px;
+        text-align: center;
+
+
+    }
+    .image{
+        width: 250%;
+        height: 250%; 
+        margin-left: -80px;
+    }
+    .h1Titulo{
+        font-size: 25px;
+        text-align: center;
+
+    }
 }

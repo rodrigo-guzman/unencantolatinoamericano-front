@@ -1,26 +1,44 @@
-.contenido {
+.contenedor {
     display: flex;
-    flex-direction: column;
-    /* Alinear elementos verticalmente uno debajo del otro */
-    align-items: center;
-    /* Centrar horizontalmente el contenido */
-    padding-bottom: 1em;
+    flex-direction: row;
+    padding: 1em;
 }
 
-.texto {
-    margin-bottom: 1em;
-    /* Agregar margen inferior para separar el texto de la imagen */
-    text-align: center;
-    /* Centrar el texto horizontalmente */
+.columnaTexto {
+    flex: 1;
+    padding: 1em;
+    text-align: left;
+}
+
+.columnaTexto p {
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+}
+
+.columnaImagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    flex: 1;
 }
 
 .image {
-    background-image: url('../../../public/derivados.jpeg');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-
-    margin-top: 1em;
-    /* Agregar margen superior para separar la imagen del texto */
-
+    width: 100%;
+    height: 100%;
 }
+
+/* Estilos para pantallas pequeñas (máximo 768px) */
+@media screen and (max-width: 768px) {
+    .contenedor {
+        flex-direction: column;
+    }
+
+    .columnaTexto {
+        text-align: center;
+    }
+}
+

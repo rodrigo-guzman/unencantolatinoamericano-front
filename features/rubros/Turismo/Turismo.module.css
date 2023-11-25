@@ -1,23 +1,42 @@
-.h1 {
-    padding-bottom: 0.5em;
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Alinea los elementos a los extremos */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 1em;
 }
 
-.contenido {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 1em;
+.columnaTexto {
+    flex: 1;
+    padding: 1em;
+    text-align: left;
+}
+
+.columnaTexto p {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+}
+
+.columnaImagen {
+    padding: 1em;
 }
 
 .image {
-    background-image: url('../../../public/turismo.jpg');
     background-position: center;
     background-size: contain;
-    width: 400px;
-    /* Ajusta el ancho de la imagen según tu preferencia */
-    height: 400px;
-    /* Ajusta el alto de la imagen según tu preferencia */
-    margin: 0 auto;
-    /* Centra horizontalmente la imagen */
-    margin-top: 1em;
-    /* Espacio entre el texto y la imagen */
+    background-repeat: no-repeat;
+    max-width: 100%; /* Asegura que la imagen no se desborde en pantallas pequeñas */
+    height: auto; /* Ajusta la altura para mantener la relación de aspecto de la imagen */
+}
+
+/* Estilos para pantallas pequeñas (máximo 768px) */
+@media screen and (max-width: 768px) {
+    .contenedor {
+        flex-direction: column;
+        /* Cambia la dirección a columna en pantallas pequeñas */
+    }
+
+    .columnaTexto {
+        text-align: center;
+    }
 }
