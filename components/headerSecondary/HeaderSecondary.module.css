@@ -36,11 +36,11 @@
     .content {
         text-align: center;
         color: #fff;
+        padding-bottom: 7em;
     }
 
     .navbar {
-        padding-bottom: 10em;
-        /* Ajusta el espaciado inferior de la barra de navegación */
+
         font-size: 14px;
         font-family: 'Arial';
         top: 0;
@@ -51,7 +51,7 @@
     .pSandrina {
         font-size: 4em;
         margin-top: 0.5em;
-        margin-left: -70px;
+        margin-left: -50px;
         font-family: 'Sandrina';
     }
 

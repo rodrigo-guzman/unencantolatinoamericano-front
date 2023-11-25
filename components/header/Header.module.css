@@ -36,6 +36,7 @@
     .content {
         text-align: center;
         color: #fff;
+        padding-bottom: 5em;
     }
 
     .navbar {
@@ -51,7 +52,7 @@
     .pSandrina {
         font-size: 4em;
         margin-top: 0.5em;
-        margin-left: -70px;
+        margin-left: -110px;
         font-family: 'Sandrina';
     }
 
