@@ -12,7 +12,6 @@
 
 .columnaTexto p {
     font-family: Arial, sans-serif;
-    font-size: 25px;
 }
 
 .columnaImagen {
@@ -38,7 +37,10 @@
     }
 
     .columnaTexto {
-        text-align: center;
+        text-align: start;
+    }
+
+    .p {
+        font-size: 25px;
     }
 }
-

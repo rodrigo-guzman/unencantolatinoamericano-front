@@ -4,7 +4,7 @@ import Image from 'next/image';
 const Alimentos: React.FC = () => {
     return (
         <div className={styles.contenedor}>
-            <h1 className={styles.h1}>Alimentos</h1>
+            <h1 className={styles.h1}>ALIMENTOS</h1>
             <div className={styles.contenido}>
                 <p className={styles.p}>
                     Nos enorgullece presentarte una sección que te llevará al apasionante universo de los productos

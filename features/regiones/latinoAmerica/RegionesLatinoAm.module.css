@@ -1,43 +1,43 @@
+/* Media Query para pantallas grandes (más de 900px de ancho) */
+@media screen and (min-width: 901px) {
+    .contenedor {
+        display: flex;
+        flex-direction: row;
+        /* Cambia a row para alinear elementos horizontalmente */
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px;
+        padding: 20px;
+    }
 
-.contenedor {
-    display: flex;
-    flex-direction: row; /* Cambia a row para alinear elementos horizontalmente */
-    align-items: center;
-    justify-content: space-between;
-    margin: 20px;
-    padding: 20px;
+    .image {
+
+        background-size: cover;
+        background-position: center;
+        width: 45%;
+        height: 45%;
+    }
+
+    .columnaTexto {
+        flex: 1;
+        max-width: 50%;
+        padding: 20px;
+        text-align: left;
+        /* Alinea el texto a la izquierda */
+        font-family: Arial, sans-serif;
+        /* Utiliza la fuente Arial para el texto */
+        font-size: 25px;
+    }
+
+    .h1Titulo {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .p {
+        font-size: 20px;
+    }
 }
-
-.image {
-    
-    background-size: cover;
-    background-position: center;
-    width: 60%; /* Ajusta el tamaño de la imagen a tu preferencia para pantallas grandes */
-    max-height: 70vh; /* Ajusta la altura máxima de la imagen a tu preferencia para pantallas grandes */
-    margin-right: 1em; /* Añade espacio entre la imagen y el texto en pantallas grandes */
-}
-
-.columnaTexto {
-    flex: 1;
-    max-width: 50%;
-    padding: 20px;
-    text-align: left; /* Alinea el texto a la izquierda */
-    font-family: Arial, sans-serif; /* Utiliza la fuente Arial para el texto */
-    font-size: 25px;
-}
-
-.h1Titulo {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.pParrafo {
-    font-size: 20px;
-    line-height: 1.5;
-}
-
-/* Estilos adicionales para resaltar el diseño minimalista */
 
 /* Estilos para pantallas pequeñas (máximo 768px) */
 @media screen and (max-width: 768px) {
@@ -47,23 +47,15 @@
     }
 
     .image {
-        width: 100%; /* Ajusta el ancho de la imagen al 100% para pantallas pequeñas */
-        max-height: 70vh; /* Ajusta la altura máxima de la imagen a tu preferencia para pantallas pequeñas */
-        margin-right: 0; /* Elimina el margen entre la imagen y el texto en pantallas pequeñas */
+        width: 100%;
+        height: 100%;
     }
 
     .columnaTexto {
-        max-width: 100%;
-        text-align: center;
-        padding: 10px;
+        text-align: start;
     }
 
-    .h1Titulo {
-        font-size: 20px;
-        margin-bottom: 5px;
-    }
-
-    .pParrafo {
-        font-size: 14px;
+    .p {
+        font-size: 25px;
     }
 }

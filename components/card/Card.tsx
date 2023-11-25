@@ -11,13 +11,14 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ image, text, link, description }) => {
     return (
-        <div className={styles.card}>
-            <Link href={link}>
+        <Link href={link}>
+            <div className={styles.card}>
                 <img src={image} alt="Imagen" width={275} height={183} className={styles.img} />
-                <h3>{text}</h3>
+                <h3 className={styles.h1}>{text}</h3>
                 <p className={styles.p}>{description}</p>
-            </Link>
-        </div>
+
+            </div>
+        </Link>
     );
 };
 

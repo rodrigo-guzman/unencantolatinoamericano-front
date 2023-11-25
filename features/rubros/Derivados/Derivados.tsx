@@ -5,7 +5,7 @@ const Derivados: React.FC = () => {
     return (
         <div className={styles.contenedor}>
             <div className={styles.columnaTexto}>
-                <h1 className={styles.h1}>Derivados</h1>
+                <h1 className={styles.h1}>DERIVADOS</h1>
                 <p className={styles.p}>
                     Estamos emocionados de presentar una sección que te llevará a un viaje de rejuvenecimiento y
                     bienestar a través de los regalos de la naturaleza. En esta edición especial, exploraremos la

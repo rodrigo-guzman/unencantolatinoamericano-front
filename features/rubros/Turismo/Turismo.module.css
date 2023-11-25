@@ -1,8 +1,10 @@
 .contenedor {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; /* Alinea los elementos a los extremos */
-    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: space-between;
+    /* Alinea los elementos a los extremos */
+    align-items: center;
+    /* Centra verticalmente los elementos */
     padding: 1em;
 }
 
@@ -14,7 +16,7 @@
 
 .columnaTexto p {
     font-family: Arial, sans-serif;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .columnaImagen {
@@ -25,8 +27,10 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    max-width: 100%; /* Asegura que la imagen no se desborde en pantallas pequeñas */
-    height: auto; /* Ajusta la altura para mantener la relación de aspecto de la imagen */
+    max-width: 100%;
+    /* Asegura que la imagen no se desborde en pantallas pequeñas */
+    height: auto;
+    /* Ajusta la altura para mantener la relación de aspecto de la imagen */
 }
 
 /* Estilos para pantallas pequeñas (máximo 768px) */
@@ -37,6 +41,10 @@
     }
 
     .columnaTexto {
-        text-align: center;
+        text-align: start;
+    }
+
+    .p {
+        font-size: 25px;
     }
 }

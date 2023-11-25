@@ -1,103 +1,73 @@
-/* Estilos para la grilla de tarjetas */
-
-
 /* Estilos para cada tarjeta individual */
 .card {
     background: rgb(5, 5, 6);
     background: linear-gradient(180deg, rgb(12, 12, 14) 0%, rgba(121, 9, 15, 1) 52%, rgba(12, 12, 14) 100%);
-    /* border: 1px solid #e0e0e0; */
     text-align: center;
     transition: transform 0.2s;
-    /* Efecto de escala en el hover */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 10px 10px 10px 10px;
-    /* Ajusta el valor para controlar la curvatura del borde */
+    border-radius: 10px;
     color: white;
     width: 20em;
-    font-family: Arial;
-    width: 20em;
     height: 25em;
+    padding: 2em;
 }
 
 .card:hover {
     transform: scale(1.05);
-    /* Escalar la tarjeta en el hover */
 }
 
 .img {
     max-width: 100%;
     height: auto;
-    border-radius: 10px 10px 10px 10px;
-    padding-bottom: 2em;
-    padding-top: 2em;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+.h3 {
+    font-family: Arial;
+
+}
+
+.p {
+    margin-top: 0.5em;
+    font-family: Arial;
+    font-size: 16px;
+    color: antiquewhite !important;
 }
 
 .a {
     display: block;
     text-decoration: none;
     color: #007bff;
-    /* Color del enlace "Abrir" */
     font-weight: bold;
     margin-top: 10px;
-    /* Espacio entre el texto y el enlace */
 }
 
-.cardGrid p {
-    padding: 1em 0;
+.cardGrid {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5em;
+    padding-bottom: 5em;
 }
-
-.p {
-    padding-left: 1em !important;
-    padding-right: 1em !important;
-}
-
-
-
 
 
 
 /* Media Query para pantallas pequeñas (menos de 600px de ancho) */
 @media screen and (max-width: 600px) {
     .cardGrid {
-        display: flex;
         flex-direction: column;
-        grid-template-columns: repeat(3, 1fr);
-        /* Tres columnas igualmente espaciadas */
-        gap: 30px;
-        /* Espacio entre las tarjetas */
-        justify-content: center;
-        align-items: center;
-        padding-top: 5em;
-        padding-bottom: 5em;
     }
 }
 
 /* Media Query para pantallas medianas (entre 601px y 900px de ancho) */
 @media screen and (min-width: 601px) and (max-width: 900px) {
-    .cardGrid {
-        display: flex;
-        grid-template-columns: repeat(3, 1fr);
-        /* Tres columnas igualmente espaciadas */
-        gap: 30px;
-        /* Espacio entre las tarjetas */
-        justify-content: center;
-        align-items: center;
-        padding-top: 5em;
-        padding-bottom: 5em;
-    }
+    /* No se necesitan estilos adicionales ya que son iguales a los de la regla general */
 }
 
 /* Media Query para pantallas grandes (más de 900px de ancho) */
 @media screen and (min-width: 901px) {
-    .cardGrid {
-        display: flex;
-        grid-template-columns: repeat(3, 1fr);
-        /* Tres columnas igualmente espaciadas */
-        gap: 30px;
-        /* Espacio entre las tarjetas */
-        justify-content: center;
-        align-items: center;
-        padding-top: 5em;
-        padding-bottom: 5em;
-    }
+    /* No se necesitan estilos adicionales ya que son iguales a los de la regla general */
 }

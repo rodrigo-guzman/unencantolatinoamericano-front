@@ -1,5 +1,5 @@
 .h1 {
-    padding-bottom: 0.5em;
+    padding-top: 1em;
 }
 
 .contenido {
@@ -9,11 +9,23 @@
 }
 
 .image {
-    
+
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
     height: auto;
     margin-top: 2em;
+}
+
+/* Estilos para pantallas pequeñas (máximo 768px) */
+@media screen and (max-width: 768px) {
+    .contenedor {
+        flex-direction: column;
+        text-align: start;
+    }
+
+    .p {
+        font-size: 25px;
+    }
 }

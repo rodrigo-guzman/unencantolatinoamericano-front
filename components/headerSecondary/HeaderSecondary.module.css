@@ -1,8 +1,28 @@
+/* Definir las fuentes en la parte superior del archivo CSS */
+@font-face {
+    font-family: 'OpalineUEL';
+    src: url('../../public/fuentes/Opaline.woff') format('woff'),
+
+}
+
+@font-face {
+    font-family: 'Sandrina';
+    src: url('../../public/fuentes/Sandrina.ttf') format('woff'),
+        url('../../public/fuentes/Sandrina.ttf') format('woff2'),
+        url('../../public/fuentes/Sandrina.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Handlettery';
+    src: url('../../public/fuentes/HANDLETTERYDEMO-REGULAR.OTF') format('opentype');
+}
+
+
 /* Media Query para pantallas pequeñas (menos de 600px de ancho) */
 @media screen and (max-width: 600px) {
     .header {
         background-color: rgba(0, 0, 0, 0.9);
-        height: 200vw !important;
+        height: 220vw !important;
         background: linear-gradient(rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), url('../../assets/fondomobile.jpeg') no-repeat;
         background-size: cover;
         text-align: center;
@@ -14,32 +34,30 @@
     }
 
     .content {
-        font-family: 'North Carossela';
-        font-size: 20px;
         text-align: center;
         color: #fff;
-        font-weight: normal;
-        padding-bottom: 15em;
     }
 
     .navbar {
-        padding-bottom: 13em;
+        padding-bottom: 10em;
+        /* Ajusta el espaciado inferior de la barra de navegación */
         font-size: 14px;
         font-family: 'Arial';
-        /* Usa posición relativa para que .navbar siga el flujo normal */
+        top: 0;
+        position: absolute;
+        margin-top: 20px;
     }
 
+    .pSandrina {
+        font-size: 4em;
+        margin-top: 0.5em;
+        margin-left: -70px;
+        font-family: 'Sandrina';
+    }
 
-    .header .logo {
-        display: none;
-        /* background-color: rgba(0, 0, 0, 0.7);
-        height: 40px;
-        width: 80px;
-        background-image: url('../../assets/turismo.jpg');
-        background-size: cover;
-        background-position: center;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        border-radius: 10px; */
+    .h3 {
+        font-size: 35px;
+        text-align: center;
     }
 
 }
@@ -50,7 +68,7 @@
         background-color: rgba(0, 0, 0, 0.7);
         height: 50vw;
         background: linear-gradient(rgba(0, 0, 0, .90) 0%, rgba(0, 0, 0, .50) 100%), url('../../assets/fondo.jpeg') !important;
-        background-size: center;
+        background-size: cover;
         background-position: center;
         text-align: center;
     }
@@ -65,7 +83,7 @@
         /* Ocupa todo el alto del header */
 
         position: relative;
-        font-family: 'North Carossela';
+
         font-size: 30px;
         text-align: center;
         color: #fff;
@@ -96,64 +114,91 @@
         font-size: 18px;
         font-family: 'Arial';
     }
+
+    .p {
+
+        font-family: 'Sandrina';
+        font-size: 60px;
+    }
+
+    .h1 {
+
+        font-family: 'OpalineUEL';
+    }
 }
 
 /* Media Query para pantallas grandes (más de 900px de ancho) */
 @media screen and (min-width: 901px) {
     .header {
         background-color: rgba(0, 0, 0, 0.7);
-        height: 30vw;
-        background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0, 0, 0, .50) 100%), url('../../assets/fondoSecundary.jpeg') no-repeat;
+        height: 50vw;
+        background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0, 0, 0, .50) 100%), url('../../assets/fondo.jpeg') no-repeat;
         background-size: cover;
         background-position: center;
-        text-align: center;
+    }
 
+
+    .pSandrina {
+        background-color: transparent;
+        /* Fondo transparente */
+        width: 80%;
+        /* Ancho del contenedor */
+        height: 150px;
+        margin: 0 auto;
+        /* Centrar horizontalmente */
+        padding-right: 1em;
+        border-radius: 10px;
+        /* Bordes redondeados */
+        box-sizing: border-box;
+        /* Incluye el padding en el ancho */
+        position: relative;
+        /* Establece la posición */
+        z-index: 1;
+        /* Asegura que esté por encima de otros elementos */
+        margin-left: 65px;
+        /* Mover ligeramente hacia la izquierda */
+        margin-bottom: 2em;
+        padding-top: 0.5em;
     }
 
     .header .content {
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
-
-        font-family: 'North Carossela';
-        font-size: 30px;
         text-align: center;
+        height: 70%;
+        font-size: 40px;
         color: #fff;
-        font-weight: normal;
-    }
-
-    .header .logo {
-        display: none;
-        /* background-color: rgba(0, 0, 0, 0.7);
-        height: 60px;
-        width: 100px;
-        background-image: url('../../assets/turismo.jpg');
-        background-size: cover;
-        background-position: center;
-        text-align: center;
-        margin-right: 7em;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        border-radius: 10px; */
     }
 
     .header .navbar {
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: center;
         font-size: 18px;
         font-family: 'Arial';
         padding-top: 2em;
     }
 
+    .navbar {
+        position: relative;
+        z-index: 2;
+    }
 
+    .p {
+        padding-top: 0.5em;
+        padding-bottom: 1em;
+        font-family: 'Sandrina';
+        font-size: 100px;
+    }
 }
 
 .p {
-    padding-top: 1em;
+    font-family: 'Sandrina', !important;
 }
 
-.h3 {
-    padding-top: 1.5em;
-    font-family: Arial;
+.h1 {
+    font-family: 'OpalineUEL' !important;
 }

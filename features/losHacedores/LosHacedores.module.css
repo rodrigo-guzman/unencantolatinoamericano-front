@@ -1,74 +1,72 @@
-/* LosHacedores.module.css */
+/* Estilos para pantallas grandes (más de 768px) */
+@media screen and (min-width: 769px) {
+    .contenedor {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px;
+        padding: 20px;
+    }
 
-.contenedor {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 20px;
-    padding: 20px;
+    .image {
+        max-width: 100%;
+        /* Ajusta el ancho del contenedor de video para pantallas grandes */
+        margin-right: 1em;
+        /* Añade espacio entre el video y el texto */
+    }
+
+    .image iframe {
+        width: 150%;
+        /* Ajusta el ancho del video al 100% para que sea responsive */
+        height: 400px;
+        /* Ajusta la altura del video a tu preferencia */
+    }
+
+    .columnaTexto {
+        flex: 1;
+        max-width: 50%;
+        padding: 20px;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        /* Utiliza la fuente Arial para el texto */
+    }
+
+    .h1Titulo {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .p {
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: left;
+    }
 }
-
-.image {
-    max-width: 100%; /* Ajusta el ancho del contenedor de video para pantallas grandes */
-    margin-right: 1em; /* Añade espacio entre el video y el texto */
-}
-
-.image iframe {
-    width: 150%; /* Ajusta el ancho del video al 100% para que sea responsive */
-    height: 400px; /* Ajusta la altura del video a tu preferencia */
-}
-
-.columnaTexto {
-    flex: 1;
-    max-width: 50%;
-    padding: 20px;
-    text-align: center;
-    font-family: Arial, sans-serif; /* Utiliza la fuente Arial para el texto */
-}
-
-.h1Titulo {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.pParrafo {
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: left;
-}
-
-/* Estilos adicionales para resaltar el diseño minimalista */
 
 /* Estilos para pantallas pequeñas (máximo 768px) */
 @media screen and (max-width: 768px) {
     .contenedor {
-        flex-direction: column;
-        padding: 10px;
+        align-items: start;
     }
 
     .image {
-        max-width: 100%; /* Ajusta el ancho del contenedor de video para pantallas pequeñas */
-        margin-right: 0; /* Elimina el margen entre el video y el texto en pantallas pequeñas */
+        width: 100%;
+        height: 100%;
     }
 
     .image iframe {
-        width: 100%; /* Ajusta el ancho del video al 100% para pantallas pequeñas */
-        height: 200px; /* Ajusta la altura del video para pantallas pequeñas */
+        width: 100%;
+        /* Ajusta el ancho del video al 100% para pantallas pequeñas */
+        height: 200px;
+        /* Ajusta la altura del video para pantallas pequeñas */
     }
 
-    .columnaTexto {
-        max-width: 100%;
-        text-align: center;
-        padding: 10px;
+    .p {
+        font-size: 25px;
     }
 
     .h1Titulo {
-        font-size: 20px;
-        margin-bottom: 5px;
-    }
-
-    .pParrafo {
-        font-size: 14px;
+        margin-top: 1em;
     }
 }

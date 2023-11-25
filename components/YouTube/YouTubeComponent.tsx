@@ -12,12 +12,12 @@ const YourComponent: React.FC = () => {
             </div>
             <div className={styles.column2}>
                 <iframe
+                    id="ytplayer"
+                    type="text/html"
                     width="100%"
-                    height="315"
-                    src="https://www.youtube.com/embed/TU_VIDEO_ID_AQUI"
-                    title="Video 1"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                ></iframe>
+                    height="405"
+                    src="https://www.youtube.com/embed/5J6_FqscBO8?si=XQaOilQrqQZ4moAp?controls=0&loop=1&modestbranding=1"
+                    frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
     );

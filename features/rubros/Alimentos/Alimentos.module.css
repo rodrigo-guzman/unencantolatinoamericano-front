@@ -1,5 +1,5 @@
 .h1 {
-    padding-bottom: 0.5em;
+    padding-top: 1em;
 }
 
 .contenido {
@@ -9,11 +9,17 @@
 }
 
 .image {
-    
+
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
     height: auto;
     margin-top: 2em;
+}
+
+@media screen and (max-width: 768px) {
+    .p {
+        font-size: 25px;
+    }
 }

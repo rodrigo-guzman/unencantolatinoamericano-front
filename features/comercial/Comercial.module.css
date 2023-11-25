@@ -1,68 +1,54 @@
-.contenedor {
-    display: flex;
-    flex-direction: row;
-    /* La dirección flexible es fila en pantallas grandes */
-    padding: 1em;
-}
+/* Estilos para pantallas grandes (más de 768px) */
+@media screen and (min-width: 769px) {
+    .contenedor {
+        display: flex;
+        flex-direction: row;
+        /* La dirección flexible es fila en pantallas grandes */
+        padding: 1em;
+    }
 
-.h1Titulo {
-    padding: 1em;
-    margin-left: -32px;
-}
+    .h1Titulo {}
 
-.columnaTexto {
-    flex: 1;
-    padding: 1em;
-}
+    .columnaTexto {
+        flex: 1;
+        padding-top: 1em;
+    }
 
-.columnaTexto p {
-    font-family: Arial, sans-serif;
-}
+    .columnaTexto p {
+        font-family: Arial, sans-serif;
+    }
 
-.columnaImagen {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1em;
-}
+    .columnaImagen {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+    }
 
-.image {
+    .image {
 
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100%;
-    /* Asegura que la imagen ocupe todo el espacio disponible en la columna de imagen */
-    height: 100%;
-    /* Asegura que la imagen ocupe todo el espacio disponible en la columna de imagen */
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        /* Asegura que la imagen ocupe todo el espacio disponible en la columna de imagen */
+        height: 100%;
+        /* Asegura que la imagen ocupe todo el espacio disponible en la columna de imagen */
+    }
 }
 
 /* Estilos para pantallas pequeñas (máximo 768px) */
 @media screen and (max-width: 768px) {
     .contenedor {
-        flex-direction: column;
-    }
-
-    .columnaTexto,
-    .columnaImagen {
-        text-align: center;
-        width: 150%;
+        align-items: start;
     }
 
     .image {
-        width: 120%;
-        height: 120%;
-        margin-left: -70px;
-    }
-
-    .h1Titulo {
-        font-size: 25px;
-        text-align: center;
-        margin-left: -70px;
-
+        width: 100%;
+        height: 100%;
     }
 
     .p {
-        margin-left: -70px;
+        font-size: 25px;
     }
 }
