@@ -13,11 +13,11 @@ const YourComponent: React.FC = () => {
             <div className={styles.column2}>
                 <iframe
                     id="ytplayer"
-                    type="text/html"
                     width="100%"
                     height="405"
                     src="https://www.youtube.com/embed/5J6_FqscBO8?si=XQaOilQrqQZ4moAp?controls=0&loop=1&modestbranding=1"
-                    frameborder="0" allowfullscreen></iframe>
+                >
+                </iframe>
             </div>
         </div>
     );
