@@ -1,38 +1,42 @@
-/* Estilos CSS */
-.contenedor {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+/* Estilos para pantallas grandes (más de 768px) */
+@media screen and (min-width: 769px) {
 
-.contenido {
-    width: 50%;
-    /* Asigna el 50% del ancho para el contenido en todas las pantallas */
-}
+    /* Estilos CSS */
+    .contenedor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-.p {
-    font-family: Arial, Helvetica, sans-serif;
-}
+    .contenido {
+        width: 50%;
+        /* Asigna el 50% del ancho para el contenido en todas las pantallas */
+    }
 
-.imageContainer {
-    width: 50%;
-    /* Asigna el 50% del ancho para la imagen en todas las pantallas */
-    text-align: right;
-    /* Alinea la imagen a la derecha dentro de su contenedor */
-}
+    .p {
+        font-family: Arial, Helvetica, sans-serif;
+    }
 
-/* Estilos para los párrafos */
-.p1,
-.p2,
-.p3 {
-    flex: 1;
-    font-family: Arial, sans-serif;
-    font-size: 20px;
-}
+    .imageContainer {
+        width: 50%;
+        /* Asigna el 50% del ancho para la imagen en todas las pantallas */
+        text-align: right;
+        /* Alinea la imagen a la derecha dentro de su contenedor */
+    }
 
-.image {
-    width: 100%;
-    height: 100%;
+    /* Estilos para los párrafos */
+    .p1,
+    .p2,
+    .p3 {
+        flex: 1;
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+    }
+
+    .image {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 /* Estilos para pantallas pequeñas (máximo 768px) */
@@ -43,8 +47,7 @@
 
     .contenedor,
     .contenido {
-        text-align: center;
-
+        text-align: start;
     }
 
     .p {
@@ -58,7 +61,7 @@
 
     .h1Titulo {
         font-size: 25px;
-        text-align: center;
+        text-align: start;
 
     }
 }
