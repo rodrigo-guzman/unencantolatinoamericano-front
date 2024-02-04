@@ -15,6 +15,11 @@
         width: auto;
         height: auto;
     }
+
+    .p {
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+    }
 }
 
 

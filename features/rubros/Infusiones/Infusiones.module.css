@@ -1,22 +1,32 @@
-.h1 {
-    padding-top: 1em;
+/* Media Query para pantallas grandes (más de 900px de ancho) */
+@media screen and (min-width: 901px) {
+    .h1 {
+        padding-top: 1em;
+    }
+
+    .contenido {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 1em;
+    }
+
+    .image {
+
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        margin-top: 2em;
+    }
+
+    .p {
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+    }
 }
 
-.contenido {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 1em;
-}
-
-.image {
-
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: auto;
-    margin-top: 2em;
-}
 
 /* Estilos para pantallas pequeñas (máximo 768px) */
 @media screen and (max-width: 768px) {

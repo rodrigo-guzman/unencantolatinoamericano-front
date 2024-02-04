@@ -9,17 +9,17 @@ const SocialMediaLinks = () => {
     return (
         <div>
             <IconButton className={styles.socialIcon}>
-                <a href="https://www.facebook.com/tupagina" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.facebook.com/UnEncantoLatinoamericano" target="_blank" rel="noopener noreferrer">
                     <FacebookIcon />
                 </a>
             </IconButton>
             <IconButton className={styles.socialIcon}>
-                <a href="https://www.instagram.com/tupagina" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/un.encanto.latinoamericano" target="_blank" rel="noopener noreferrer">
                     <InstagramIcon />
                 </a>
             </IconButton>
             <IconButton className={styles.socialIcon}>
-                <a href="https://www.youtube.com/tupagina" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.youtube.com/@unencantolatinoamericano" target="_blank" rel="noopener noreferrer">
                     <YouTubeIcon />
                 </a>
             </IconButton>

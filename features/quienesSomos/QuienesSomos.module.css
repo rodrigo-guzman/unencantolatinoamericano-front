@@ -38,9 +38,9 @@
         margin-bottom: 10px;
     }
 
-    .pParrafo {
+    .p {
+        font-family: Arial, sans-serif;
         font-size: 20px;
-        line-height: 1.5;
     }
 
 }

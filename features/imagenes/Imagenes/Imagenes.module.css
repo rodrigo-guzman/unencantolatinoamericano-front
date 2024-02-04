@@ -1,6 +1,7 @@
 /* Estilos para pantallas grandes (más de 768px) */
 @media screen and (min-width: 769px) {
     .contenido {
+
         align-items: start;
         padding-top: 1em;
     }
@@ -11,14 +12,13 @@
     }
 
     .p {
-        font-size: 20px;
-        /* Ajustar el tamaño de la fuente del párrafo en pantallas grandes */
         font-family: Arial, sans-serif;
-        /* Aplicar la fuente Arial al párrafo en pantallas grandes */
+        font-size: 20px;
     }
 
     .h1 {
-        text-align: center;
+        display: flex;
+        text-align: start;
         /* Centrar el h1 horizontalmente en pantallas grandes */
     }
 }

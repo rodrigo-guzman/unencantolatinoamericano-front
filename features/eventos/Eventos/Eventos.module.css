@@ -3,38 +3,39 @@
     .contenedor {
         display: flex;
         flex-direction: row;
-        padding: 1em;
+        /* Cambia a row para alinear elementos horizontalmente */
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .image {
+        background-size: cover;
+        background-position: center;
+        width: 90%;
+        height: 90%;
     }
 
     .columnaTexto {
         flex: 1;
-        padding: 1em;
+        max-width: 50%;
+        padding: 20px;
         text-align: left;
+        /* Alinea el texto a la izquierda */
+        font-family: Arial, sans-serif;
+        /* Utiliza la fuente Arial para el texto */
+        font-size: 25px;
+    }
+
+    .h1Titulo {
+        font-size: 24px;
+        margin-bottom: 10px;
     }
 
     .p {
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .columnaTexto p {
         font-family: Arial, sans-serif;
         font-size: 20px;
-    }
-
-    .columnaImagen {
-        flex: 1;
-        /* Cambia a flex 1 para ocupar el mismo espacio que la columna de texto */
-        padding: 1em;
-        text-align: center;
-        /* Alinea el contenido horizontalmente */
-    }
-
-    .image {
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        width: 90%;
-        height: 90%;
     }
 }
 

@@ -1,0 +1,67 @@
+/* Media Query para pantallas pequeñas (menos de 600px de ancho) */
+@media screen and (max-width: 600px) {
+    .imageContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        /* Ajusta según tus necesidades */
+        align-items: flex-start;
+        /* Ajusta según tus necesidades */
+    }
+
+    .image {
+        flex-basis: calc(50% - 10px);
+        /* El 10px es para dejar espacio entre los elementos */
+        margin-bottom: 10px;
+        /* Ajusta según tus necesidades */
+        box-sizing: border-box;
+    }
+}
+
+/* Media Query para pantallas medianas (entre 601px y 900px de ancho) */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    .imageContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        /* Ajusta según tus necesidades */
+        align-items: flex-start;
+        /* Ajusta según tus necesidades */
+    }
+
+    .image {
+        flex-basis: calc(50% - 10px);
+        /* El 10px es para dejar espacio entre los elementos */
+        margin-bottom: 10px;
+        /* Ajusta según tus necesidades */
+        box-sizing: border-box;
+    }
+}
+
+/* Media Query para pantallas grandes (más de 900px de ancho) */
+@media screen and (min-width: 901px) {
+    .imageContainer {
+        margin-top: 1em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        /* Ajusta según tus necesidades */
+        align-items: flex-start;
+        /* Ajusta según tus necesidades */
+    }
+
+    .image {
+        flex-basis: calc(25% - 10px);
+        /* El 10px es para dejar espacio entre los elementos */
+        margin-bottom: 10px;
+        /* Ajusta según tus necesidades */
+        box-sizing: border-box;
+        width: 250;
+        height: 355;
+    }
+
+
+    .image:hover {
+        transform: scale(1.03);
+    }
+}

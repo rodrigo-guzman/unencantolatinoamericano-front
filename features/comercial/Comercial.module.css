@@ -3,37 +3,39 @@
     .contenedor {
         display: flex;
         flex-direction: row;
-        /* La dirección flexible es fila en pantallas grandes */
-        padding: 1em;
-    }
-
-    .h1Titulo {}
-
-    .columnaTexto {
-        flex: 1;
-        padding-top: 1em;
-    }
-
-    .columnaTexto p {
-        font-family: Arial, sans-serif;
-    }
-
-    .columnaImagen {
-        display: flex;
-        justify-content: center;
+        /* Cambia a row para alinear elementos horizontalmente */
         align-items: center;
-        padding: 1em;
+        justify-content: space-between;
+        margin: 20px;
+        padding: 20px;
     }
 
     .image {
-
+        background-size: cover;
         background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        width: 100%;
-        /* Asegura que la imagen ocupe todo el espacio disponible en la columna de imagen */
-        height: 100%;
-        /* Asegura que la imagen ocupe todo el espacio disponible en la columna de imagen */
+        width: 90%;
+        height: 90%;
+    }
+
+    .columnaTexto {
+        flex: 1;
+        max-width: 50%;
+        padding: 20px;
+        text-align: left;
+        /* Alinea el texto a la izquierda */
+        font-family: Arial, sans-serif;
+        /* Utiliza la fuente Arial para el texto */
+        font-size: 25px;
+    }
+
+    .h1Titulo {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .p {
+        font-family: Arial, sans-serif;
+        font-size: 20px;
     }
 }
 

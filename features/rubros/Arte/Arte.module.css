@@ -16,6 +16,11 @@
         padding-top: 1em;
     }
 
+    .p {
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+    }
+
     .image {
         background-position: center;
         background-size: contain;
