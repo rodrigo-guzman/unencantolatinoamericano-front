@@ -27,3 +27,17 @@
         padding-top: 5em;
     }
 }
+
+.contenedor {
+    margin: 0 5em;
+    padding: 2em 0;
+}
+
+.carrousel {
+    height: 400px;
+    width: calc(100% - 15px) !important;
+    padding: 25px 28px;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+}
