@@ -35,7 +35,7 @@ const Proyecto: React.FC = () => {
 
             <div className={styles.imageContainer}>
                 <Image
-                    src={'https://firebasestorage.googleapis.com/v0/b/un-encanto-latinoamericano.appspot.com/o/Regiones.jpeg?alt=media&token=c485f45f-6291-4977-8a5c-aa222c6958c0&_gl=1*c1gn17*_ga*MTQ4ODY2MzM3NS4xNjk0Mjk3MzIx*_ga_CW55HF8NVT*MTY5ODg5Mjc3Ni41LjEuMTY5ODg5Mjc5MS40NS4wLjA.'}
+                    src={'/Regiones.jpeg'}
                     alt="Imagen"
                     width={723}
                     height={623}

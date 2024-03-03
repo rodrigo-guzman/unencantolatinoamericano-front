@@ -19,6 +19,7 @@
     .p {
         font-family: Arial, sans-serif;
         font-size: 20px;
+        line-height: 1.5;
     }
 
     .columnaImagen {
@@ -38,16 +39,26 @@
 
 /* Estilos para pantallas pequeñas (máximo 768px) */
 @media screen and (max-width: 768px) {
-    .contenedor {
+    .contenido {
         flex-direction: column;
-        /* Cambia la dirección a columna en pantallas pequeñas */
-    }
-
-    .columnaTexto {
-        text-align: start;
+        text-align: center;
     }
 
     .p {
         font-size: 25px;
+        margin: 0 2em;
+    }
+
+    .image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .lineSpacing {
+        line-height: 1.5;
+    }
+
+    .columnaTexto {
+        text-align: center;
     }
 }

@@ -1,7 +1,23 @@
 /* Estilos para pantallas grandes (más de 768px) */
 @media screen and (min-width: 769px) {
+    .image {
+        background-size: cover;
+        background-position: center;
+        width: 45%;
+        height: 45%;
+    }
+
+    .image iframe {
+        width: 100%;
+        /* Ajusta el ancho del video al 100% para que sea responsive */
+        height: 400px;
+        /* Ajusta la altura del video a tu preferencia */
+    }
+
     .contenedor {
         display: flex;
+        flex-direction: row;
+        /* Cambia a row para alinear elementos horizontalmente */
         align-items: center;
         justify-content: space-between;
         margin: 20px;
@@ -9,37 +25,34 @@
     }
 
     .image {
-        max-width: 100%;
-        /* Ajusta el ancho del contenedor de video para pantallas grandes */
-        margin-right: 1em;
-        /* Añade espacio entre el video y el texto */
-    }
 
-    .image iframe {
-        width: 150%;
-        /* Ajusta el ancho del video al 100% para que sea responsive */
-        height: 400px;
-        /* Ajusta la altura del video a tu preferencia */
+        background-size: cover;
+        background-position: center;
+        width: 45%;
+        height: 45%;
     }
 
     .columnaTexto {
         flex: 1;
         max-width: 50%;
         padding: 20px;
-        text-align: center;
+        text-align: left;
+        /* Alinea el texto a la izquierda */
         font-family: Arial, sans-serif;
         /* Utiliza la fuente Arial para el texto */
+        font-size: 25px;
+        margin: 0 4em
     }
 
     .h1Titulo {
-        font-size: 24px;
-        font-weight: bold;
+        font-size: 1.5em;
         margin-bottom: 10px;
     }
 
     .p {
         font-family: Arial, sans-serif;
         font-size: 20px;
+        line-height: 1.5;
     }
 }
 
@@ -63,6 +76,7 @@
 
     .p {
         font-size: 25px;
+        line-height: 1.5;
     }
 
     .h1Titulo {

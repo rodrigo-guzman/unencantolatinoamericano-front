@@ -9,12 +9,12 @@ const LosHacedores: React.FC = () => {
         <div className={styles.contenedor}>
             <div className={styles.image}>
                 <iframe
-                    width=""
-                    height=""
-                    src="https://www.youtube.com/embed/TU_VIDEO_ID_AQUI"
-                    title="Video 1"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                ></iframe>
+                    id="ytplayer"
+                    width="100%"
+                    height="405"
+                    src="https://www.youtube.com/embed/5J6_FqscBO8?si=XQaOilQrqQZ4moAp?controls=0&loop=1&modestbranding=1"
+                >
+                </iframe>
             </div>
             <div className={styles.columnaTexto}>
                 <h1 className={styles.h1Titulo}>LOS HACEDORES</h1>

@@ -11,7 +11,6 @@
     }
 
     .image {
-
         background-size: cover;
         background-position: center;
         width: 45%;
@@ -35,12 +34,13 @@
     .h1Titulo {
         font-size: 24px;
         font-weight: bold;
-        margin-bottom: 10px;
+        margin-top: 3em;
     }
 
     .p {
         font-family: Arial, sans-serif;
         font-size: 20px;
+        line-height: 1.5;
     }
 
 }

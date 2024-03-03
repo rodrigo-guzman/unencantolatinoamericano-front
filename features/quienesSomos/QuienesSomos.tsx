@@ -7,7 +7,7 @@ const QuienesSomos: React.FC = () => {
     return (
 
         <div className={styles.contenedor}>
-            <Image src={'https://firebasestorage.googleapis.com/v0/b/un-encanto-latinoamericano.appspot.com/o/QuienesSomos.jpeg?alt=media&token=21ecf32f-f4f4-4fd9-b3dd-cc30061d54c6&_gl=1*u3pchn*_ga*MTQ4ODY2MzM3NS4xNjk0Mjk3MzIx*_ga_CW55HF8NVT*MTY5ODg5MDM0NS40LjEuMTY5ODg5MDU0NS42MC4wLjA.'} alt="Imagen" width={855} height={819} className={styles.image} />
+            <Image src={'/QuienesSomos.jpeg'} alt="Imagen" width={855} height={819} className={styles.image} />
             <div className={styles.columnaTexto}>
                 <h1 className={styles.h1Titulo}>Quienes Somos</h1>
                 <p className={styles.p}>

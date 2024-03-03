@@ -33,14 +33,19 @@
         position: relative;
     }
 
+    .video {
+        display: none;
+    }
+
     .content {
         text-align: center;
         color: #fff;
-        padding-bottom: 7em;
+        padding-bottom: 5em;
     }
 
     .navbar {
-
+        padding-bottom: 10em;
+        /* Ajusta el espaciado inferior de la barra de navegación */
         font-size: 14px;
         font-family: 'Arial';
         top: 0;
@@ -51,12 +56,13 @@
     .pSandrina {
         font-size: 4em;
         margin-top: 0.5em;
-        margin-left: -50px;
+        margin-left: -110px;
         font-family: 'Sandrina';
     }
 
-    .h3 {
+    .h1 {
         font-size: 35px;
+        font-family: 'OpalineUEL';
         text-align: center;
     }
 
@@ -67,7 +73,7 @@
     .header {
         background-color: rgba(0, 0, 0, 0.7);
         height: 50vw;
-        background: linear-gradient(rgba(0, 0, 0, .90) 0%, rgba(0, 0, 0, .50) 100%), url('../../assets/fondo.jpeg') !important;
+        background: linear-gradient(rgba(0, 0, 0, .90) 0%, rgba(0, 0, 0, .50) 100%), url('https://firebasestorage.googleapis.com/v0/b/un-encanto-latinoamericano.appspot.com/o/Portada.mp4?alt=media&token=80d9c4aa-31fe-4e44-b8cd-4f6b4f225979') !important;
         background-size: cover;
         background-position: center;
         text-align: center;
@@ -132,11 +138,19 @@
     .header {
         background-color: rgba(0, 0, 0, 0.7);
         height: 50vw;
-        background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0, 0, 0, .50) 100%), url('../../assets/fondo.jpeg') no-repeat;
-        background-size: cover;
-        background-position: center;
+        position: relative;
+        overflow: hidden;
     }
 
+    .video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
 
     .pSandrina {
         background-color: transparent;
@@ -167,9 +181,11 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        height: 70%;
+        height: 100%;
+        padding-top: 0.5em;
         font-size: 40px;
         color: #fff;
+        padding-bottom: 4em !important;
     }
 
     .header .navbar {
@@ -192,6 +208,21 @@
         padding-bottom: 1em;
         font-family: 'Sandrina';
         font-size: 100px;
+    }
+
+    .logo {
+        width: 100px;
+        /* Ajusta el ancho según tus necesidades */
+        height: 100px;
+        /* Ajusta la altura según tus necesidades */
+        border-radius: 50%;
+        /* Hace que la imagen sea circular */
+        object-fit: cover;
+        /* Ajusta el tamaño de la imagen para cubrir el contenedor circular */
+        object-position: center;
+        /* Centra la imagen dentro del contenedor circular */
+        border: 2px solid #fff;
+        /* Añade un borde blanco opcional */
     }
 }
 

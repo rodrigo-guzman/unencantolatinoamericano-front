@@ -11,7 +11,7 @@
     }
 
     .image {
-
+        margin-left: 1em;
         background-size: cover;
         background-position: center;
         width: 100%;
@@ -21,7 +21,7 @@
     .columnaTexto {
         flex: 1;
         max-width: 50%;
-        padding: 20px;
+        padding: 3px 3em;
         text-align: left;
         /* Alinea el texto a la izquierda */
         font-family: Arial, sans-serif;
@@ -37,6 +37,8 @@
     .p {
         font-family: Arial, sans-serif;
         font-size: 20px;
+        margin-left: 0 3em !important;
+        line-height: 1.5;
     }
 }
 
@@ -53,6 +55,7 @@
 
     .p {
         font-size: 25px;
+        line-height: 1.5;
     }
 
     .image {

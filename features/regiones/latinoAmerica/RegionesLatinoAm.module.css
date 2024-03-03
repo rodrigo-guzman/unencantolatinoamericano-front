@@ -27,16 +27,18 @@
         font-family: Arial, sans-serif;
         /* Utiliza la fuente Arial para el texto */
         font-size: 25px;
+        margin: 0 4em
     }
 
     .h1Titulo {
-        font-size: 24px;
+        font-size: 1.5em;
         margin-bottom: 10px;
     }
 
     .p {
         font-family: Arial, sans-serif;
         font-size: 20px;
+        line-height: 1.5;
     }
 }
 
@@ -50,6 +52,7 @@
     .image {
         width: 100%;
         height: 100%;
+        margin: 2em 0;
     }
 
     .columnaTexto {
@@ -58,5 +61,6 @@
 
     .p {
         font-size: 25px;
+        line-height: 1.5;
     }
 }

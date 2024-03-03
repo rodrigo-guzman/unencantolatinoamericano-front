@@ -1,36 +1,52 @@
 /* Media Query para pantallas grandes (más de 900px de ancho) */
 @media screen and (min-width: 901px) {
-    .contenido {
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 1em;
-        justify-content: center;
-        align-items: center;
-    }
-
     .h1 {
         padding-top: 1em;
+        font-size: 1.5em;
+        /* Ajusta el tamaño de fuente para dispositivos más pequeños */
+    }
+
+    /* Estilos para el contenido principal */
+    .contenido {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 1em;
     }
 
     .p {
         font-family: Arial, sans-serif;
         font-size: 20px;
+        margin: 0 2em;
     }
 
     .image {
-        width: 879px;
-        height: auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
         margin-top: 2em;
+    }
+
+    .lineSpacing {
+        line-height: 1.5;
+    }
+
+    .centerText {
+        text-align: center;
     }
 }
 
 
-
 /* Estilos para pantallas pequeñas (máximo 768px) */
 @media screen and (max-width: 768px) {
-    .contenedor {
+    .contenido {
         flex-direction: column;
-        padding: 10px;
+        text-align: start;
+    }
+
+    .p {
+        font-size: 25px;
+        margin: 0 2em;
     }
 
     .image {
@@ -38,11 +54,11 @@
         height: 100%;
     }
 
-    .columnaTexto {
-        text-align: start;
+    .lineSpacing {
+        line-height: 1.5;
     }
 
-    .p {
-        font-size: 25px;
+    .centerText {
+        text-align: center;
     }
 }

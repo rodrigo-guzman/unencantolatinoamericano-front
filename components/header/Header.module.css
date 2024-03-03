@@ -33,6 +33,10 @@
         position: relative;
     }
 
+    .video {
+        display: none;
+    }
+
     .content {
         text-align: center;
         color: #fff;
@@ -69,7 +73,7 @@
     .header {
         background-color: rgba(0, 0, 0, 0.7);
         height: 50vw;
-        background: linear-gradient(rgba(0, 0, 0, .90) 0%, rgba(0, 0, 0, .50) 100%), url('../../assets/fondo.jpeg') !important;
+        background: linear-gradient(rgba(0, 0, 0, .90) 0%, rgba(0, 0, 0, .50) 100%), url('https://firebasestorage.googleapis.com/v0/b/un-encanto-latinoamericano.appspot.com/o/Portada.mp4?alt=media&token=80d9c4aa-31fe-4e44-b8cd-4f6b4f225979') !important;
         background-size: cover;
         background-position: center;
         text-align: center;
@@ -134,11 +138,19 @@
     .header {
         background-color: rgba(0, 0, 0, 0.7);
         height: 50vw;
-        background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0, 0, 0, .50) 100%), url('../../assets/fondo.jpeg') no-repeat;
-        background-size: cover;
-        background-position: center;
+        position: relative;
+        overflow: hidden;
     }
 
+    .video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
 
     .pSandrina {
         background-color: transparent;
@@ -170,7 +182,6 @@
         align-items: center;
         text-align: center;
         height: 100%;
-        padding-top: 0.5em;
         font-size: 40px;
         color: #fff;
     }

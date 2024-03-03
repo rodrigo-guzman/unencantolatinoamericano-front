@@ -13,7 +13,7 @@ const Comercial: React.FC = () => {
             </div>
             <div className={styles.columnaImagen}>
                 <Image
-                    src={'https://firebasestorage.googleapis.com/v0/b/un-encanto-latinoamericano.appspot.com/o/Comercial.jpeg?alt=media&token=d52a64c4-8e24-42e7-9a4f-99fdb029a931&_gl=1*vig0li*_ga*NDg1MDQyNDAwLjE2OTkwMjMzNjM.*_ga_CW55HF8NVT*MTY5OTAyMzM2NC4xLjEuMTY5OTAyMzUxOS41MS4wLjA.'}
+                    src={'/Comercial.jpeg'}
                     alt="Imagen"
                     width={375}
                     height={375}
