@@ -233,3 +233,8 @@
 .h1 {
     font-family: 'OpalineUEL' !important;
 }
+
+.h3 {
+    font-family: Arial;
+    max-width: 100%;
+}
